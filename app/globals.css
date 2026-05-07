@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+/* ─── Brand tokens ─────────────────────────────────────── */
+:root {
+  --dark:   #1C1B2E;
+  --gold:   #C49A3C;
+  --gold-light: #D4AF5A;
+  --cream:  #FAF8F5;
+  --cream-2: #F0EDE8;
+  --text:   #2A2A3C;
+  --muted:  #6B6B7B;
+}
+
+@theme inline {
+  --color-dark:       var(--dark);
+  --color-gold:       var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-cream:      var(--cream);
+  --color-cream-2:    var(--cream-2);
+  --color-text:       var(--text);
+  --color-muted:      var(--muted);
+
+  --font-serif: var(--font-cormorant), "Georgia", serif;
+  --font-sans:  var(--font-inter), system-ui, sans-serif;
+}
+
+/* ─── Base ──────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Typography helpers ────────────────────────────────── */
+.heading {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+.heading-display {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+/* ─── Gold divider ──────────────────────────────────────── */
+.gold-line {
+  display: inline-block;
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+}
+
+/* ─── Section padding ───────────────────────────────────── */
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* ─── Container ─────────────────────────────────────────── */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ─── Button ────────────────────────────────────────────── */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: var(--gold);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: #fff;
+}
+
+/* ─── Nav link ──────────────────────────────────────────── */
+.nav-link {
+  position: relative;
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
+  transition: color 0.2s;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.25s;
+}
+
+.nav-link:hover {
+  color: var(--gold-light);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ─── Card ──────────────────────────────────────────────── */
+.treatment-card {
+  background: #fff;
+  border: 1px solid var(--cream-2);
+  padding: 1.75rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.treatment-card:hover {
+  box-shadow: 0 8px 32px rgba(28, 27, 46, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ─── Price tag ─────────────────────────────────────────── */
+.price-tag {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  color: var(--gold);
+}
+
+/* ─── Fade-in animation ─────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease both;
+}
