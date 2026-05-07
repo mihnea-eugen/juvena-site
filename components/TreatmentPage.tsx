@@ -3,7 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import type { FAQItem } from "@/lib/data/schema";
-import { schemaFAQ, schemaMedicalProcedure } from "@/lib/data/schema";
+import { schemaFAQ, schemaMedicalProcedure, schemaBreadcrumb } from "@/lib/data/schema";
+
+const BASE_URL = "https://juvena-timisoara.ro";
 
 export type BreadcrumbItem = { name: string; href: string };
 
@@ -44,9 +46,16 @@ export default function TreatmentPage({
 }: TreatmentPageProps) {
   const faqSchema = faq ? schemaFAQ(faq) : null;
   const procedureSchema = schema ? schemaMedicalProcedure(schema) : null;
+  const breadcrumbSchema = schemaBreadcrumb(
+    breadcrumbs.map((b) => ({ name: b.name, url: `${BASE_URL}${b.href}` }))
+  );
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {faqSchema && (
         <script
           type="application/ld+json"

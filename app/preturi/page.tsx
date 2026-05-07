@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/ui/Breadcrumb";
 import { CATEGORIES } from "@/lib/data/treatments";
 
 export const metadata: Metadata = {
-  title: "Prețuri Tratamente Estetice Timișoara 2025 | Juvena",
+  title: "Prețuri Tratamente Estetice Timișoara 2026 | Juvena",
   description:
     "Lista completă de prețuri pentru acid hialuronic, toxină botulinică, skinbooster, peeling chimic și dermatologie medicală la Juvena Timișoara.",
   alternates: { canonical: "https://juvena-timisoara.ro/preturi/" },

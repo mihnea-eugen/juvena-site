@@ -1,19 +1,57 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const NAV_ITEMS = [
+type SubItem = { label: string; href: string };
+type Category = { label: string; href: string; items: SubItem[] };
+type NavItem =
+  | { label: string; href: string; children?: undefined }
+  | { label: string; href: string; children: Category[] };
+
+const NAV_ITEMS: NavItem[] = [
   { label: "Despre noi", href: "/despre-noi/" },
   { label: "Medici", href: "/medici/" },
   {
     label: "Tratamente",
     href: "#",
     children: [
-      { label: "Dermatologie Estetică", href: "/dermatologie-estetica/" },
-      { label: "Dermatologie Medicală", href: "/dermatologie-medicala/" },
-      { label: "Tratamente Faciale", href: "/tratamente-faciale/" },
+      {
+        label: "Dermatologie Estetică",
+        href: "/dermatologie-estetica/",
+        items: [
+          { label: "Acid hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },
+          { label: "Toxină botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
+          { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" },
+          { label: "Biostimulatori colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },
+          { label: "Terapia Vampir PRP", href: "/dermatologie-estetica/terapia-vampir-prp/" },
+          { label: "Lipoliză injectabilă", href: "/dermatologie-estetica/lipoliza-injectabila/" },
+          { label: "Hiperhidroză", href: "/dermatologie-estetica/hiperhidroza/" },
+          { label: "Nefertiti Lift", href: "/dermatologie-estetica/nefertiti-lift/" },
+          { label: "Face Slimming", href: "/dermatologie-estetica/face-slimming/" },
+          { label: "Hialuronidaza", href: "/dermatologie-estetica/hialuronidaza/" },
+        ],
+      },
+      {
+        label: "Dermatologie Medicală",
+        href: "/dermatologie-medicala/",
+        items: [
+          { label: "Consult dermatologic", href: "/dermatologie-medicala/consult-dermatologic/" },
+          { label: "Dermatoscopie digitală", href: "/dermatologie-medicala/dermatoscopie/" },
+          { label: "Electrocauterizare", href: "/dermatologie-medicala/electrocauterizare/" },
+        ],
+      },
+      {
+        label: "Tratamente Faciale",
+        href: "/tratamente-faciale/",
+        items: [
+          { label: "Curățare dermatologică", href: "/tratamente-faciale/curatare-dermatologica/" },
+          { label: "Dermapen", href: "/tratamente-faciale/dermapen/" },
+          { label: "Peeling chimic", href: "/tratamente-faciale/peeling-chimic/" },
+          { label: "Winther Glow", href: "/tratamente-faciale/winther-glow/" },
+        ],
+      },
     ],
   },
   { label: "Prețuri", href: "/preturi/" },
@@ -23,7 +61,9 @@ const NAV_ITEMS = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [treatmentsOpen, setTreatmentsOpen] = useState(false);
+  const [mobileTreatOpen, setMobileTreatOpen] = useState(false);
+  const [mobileCatOpen, setMobileCatOpen] = useState<string | null>(null);
+  const megaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -40,54 +80,65 @@ export default function Header() {
       }`}
     >
       <div className="container flex items-center justify-between h-18 md:h-20">
+
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0">
+        <Link href="/" className="flex items-center shrink-0" aria-label="Juvena Clinic Timișoara">
           <Image
-            src="/images/logo_tm.png"
-            alt="Juvena Timișoara"
-            width={40}
-            height={56}
-            className="h-10 w-auto"
+            src="/images/logo.png"
+            alt="Juvena Clinic Timișoara"
+            width={130}
+            height={121}
+            className="h-12 w-auto"
             priority
           />
-          <span
-            className="heading text-cream text-xl tracking-widest uppercase hidden sm:block"
-            style={{ fontFamily: "var(--font-serif)" }}
-          >
-            Juvena
-          </span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-8" aria-label="Navigare principală">
           {NAV_ITEMS.map((item) =>
             item.children ? (
-              <div key={item.label} className="relative group">
+              <div key={item.label} className="relative group" ref={megaRef}>
                 <button
                   className="nav-link flex items-center gap-1"
                   aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   {item.label}
                   <svg
-                    className="w-3 h-3 mt-0.5 transition-transform group-hover:rotate-180"
+                    className="w-3 h-3 mt-0.5 transition-transform duration-200 group-hover:rotate-180"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                {/* Dropdown */}
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200">
-                  <div className="bg-[var(--dark)] border border-white/10 py-2 min-w-[220px]">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="block px-5 py-2.5 text-cream/80 hover:text-gold hover:bg-white/5 text-sm tracking-wide transition-colors"
-                      >
-                        {child.label}
-                      </Link>
+
+                {/* Mega-menu dropdown — 3 coloane */}
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200 translate-y-1 group-hover:translate-y-0">
+                  <div className="bg-[var(--dark)] border border-white/10 shadow-2xl p-6 w-[680px] grid grid-cols-3 gap-6">
+                    {item.children.map((cat) => (
+                      <div key={cat.href}>
+                        <Link
+                          href={cat.href}
+                          className="block text-[var(--gold)] text-xs tracking-widest uppercase font-medium mb-3 hover:opacity-80 transition-opacity"
+                        >
+                          {cat.label}
+                        </Link>
+                        <ul className="space-y-1.5">
+                          {cat.items.map((sub) => (
+                            <li key={sub.href}>
+                              <Link
+                                href={sub.href}
+                                className="block text-cream/70 hover:text-cream text-sm leading-snug transition-colors py-0.5"
+                              >
+                                {sub.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -106,7 +157,8 @@ export default function Header() {
         {/* Mobile hamburger */}
         <button
           className="lg:hidden text-cream p-2"
-          aria-label="Deschide meniu"
+          aria-label={mobileOpen ? "Închide meniu" : "Deschide meniu"}
+          aria-expanded={mobileOpen}
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           <span
@@ -130,38 +182,81 @@ export default function Header() {
       {/* Mobile menu */}
       <div
         className={`lg:hidden bg-[var(--dark)] border-t border-white/10 overflow-hidden transition-all duration-300 ${
-          mobileOpen ? "max-h-[500px]" : "max-h-0"
+          mobileOpen ? "max-h-[80vh] overflow-y-auto" : "max-h-0"
         }`}
       >
-        <nav className="container py-6 flex flex-col gap-1">
+        <nav className="container py-4 flex flex-col" aria-label="Navigare mobilă">
           {NAV_ITEMS.map((item) =>
             item.children ? (
-              <div key={item.label}>
+              <div key={item.label} className="border-b border-white/5">
+                {/* Nivel 1 — Tratamente */}
                 <button
-                  onClick={() => setTreatmentsOpen(!treatmentsOpen)}
-                  className="w-full flex items-center justify-between py-3 text-cream/80 text-sm tracking-widest uppercase"
+                  onClick={() => setMobileTreatOpen(!mobileTreatOpen)}
+                  className="w-full flex items-center justify-between py-3.5 text-cream/80 text-sm tracking-widest uppercase"
+                  aria-expanded={mobileTreatOpen}
                 >
                   {item.label}
                   <svg
-                    className={`w-4 h-4 transition-transform ${treatmentsOpen ? "rotate-180" : ""}`}
+                    className={`w-4 h-4 transition-transform duration-200 ${mobileTreatOpen ? "rotate-180" : ""}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                {treatmentsOpen && (
-                  <div className="pl-4 flex flex-col gap-1 mb-2">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        onClick={() => setMobileOpen(false)}
-                        className="py-2 text-cream/70 hover:text-gold text-sm tracking-wide transition-colors"
-                      >
-                        {child.label}
-                      </Link>
+
+                {/* Nivel 2 — categorii */}
+                {mobileTreatOpen && (
+                  <div className="pb-2">
+                    {item.children.map((cat) => (
+                      <div key={cat.href}>
+                        {/* Categorie */}
+                        <button
+                          onClick={() =>
+                            setMobileCatOpen(mobileCatOpen === cat.href ? null : cat.href)
+                          }
+                          className="w-full flex items-center justify-between pl-4 py-2.5 text-[var(--gold)] text-xs tracking-widest uppercase"
+                          aria-expanded={mobileCatOpen === cat.href}
+                        >
+                          {cat.label}
+                          <svg
+                            className={`w-3.5 h-3.5 mr-1 transition-transform duration-200 ${
+                              mobileCatOpen === cat.href ? "rotate-180" : ""
+                            }`}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+
+                        {/* Subcategorii */}
+                        {mobileCatOpen === cat.href && (
+                          <div className="pl-8 pb-2 flex flex-col gap-0.5">
+                            <Link
+                              href={cat.href}
+                              onClick={() => setMobileOpen(false)}
+                              className="py-2 text-cream/50 hover:text-gold text-xs tracking-wide transition-colors italic"
+                            >
+                              Vezi toate →
+                            </Link>
+                            {cat.items.map((sub) => (
+                              <Link
+                                key={sub.href}
+                                href={sub.href}
+                                onClick={() => setMobileOpen(false)}
+                                className="py-2 text-cream/70 hover:text-gold text-sm transition-colors"
+                              >
+                                {sub.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     ))}
                   </div>
                 )}
@@ -171,7 +266,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
-                className="py-3 text-cream/80 hover:text-gold text-sm tracking-widest uppercase transition-colors"
+                className="py-3.5 border-b border-white/5 text-cream/80 hover:text-gold text-sm tracking-widest uppercase transition-colors"
               >
                 {item.label}
               </Link>
@@ -180,7 +275,7 @@ export default function Header() {
           <Link
             href="/contact/"
             onClick={() => setMobileOpen(false)}
-            className="btn-gold mt-4 justify-center text-center"
+            className="btn-gold mt-5 mb-2 justify-center text-center"
           >
             Programare
           </Link>

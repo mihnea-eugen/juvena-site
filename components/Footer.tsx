@@ -29,18 +29,12 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
               <Image
-                src="/images/logo_tm.png"
-                alt="Juvena Timișoara"
-                width={36}
-                height={50}
-                className="h-9 w-auto brightness-0 invert opacity-80"
+                src="/images/logo.png"
+                alt="Juvena Clinic Timișoara"
+                width={130}
+                height={121}
+                className="h-10 w-auto"
               />
-              <span
-                className="text-cream text-lg tracking-widest uppercase"
-                style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
-              >
-                Juvena
-              </span>
             </Link>
             <p className="text-sm leading-relaxed text-cream/50 mb-6">
               Clinică de dermatologie estetică și medicală în Timișoara.

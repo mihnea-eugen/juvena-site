@@ -24,9 +24,9 @@ export function schemaOrganization() {
     url: BASE_URL,
     logo: {
       "@type": "ImageObject",
-      url: `${BASE_URL}/images/logo_tm.png`,
-      width: 1704,
-      height: 2389,
+      url: `${BASE_URL}/images/logo.png`,
+      width: 520,
+      height: 485,
     },
     image: `${BASE_URL}/images/og-image.jpg`,
     description:

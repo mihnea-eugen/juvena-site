@@ -31,7 +31,7 @@ export const META: Record<string, PageMeta> = {
   },
   preturi: {
     slug: "/preturi/",
-    title: "Prețuri Tratamente Estetice Timișoara 2025 | Juvena",
+    title: "Prețuri Tratamente Estetice Timișoara 2026 | Juvena",
     description:
       "Lista completă de prețuri pentru acid hialuronic, toxină botulinică, skinbooster, peeling chimic și dermatologie medicală la Juvena Timișoara.",
     canonical: `${BASE_URL}/preturi/`,
@@ -89,7 +89,7 @@ export const META: Record<string, PageMeta> = {
       "Stimulează producția naturală de colagen cu HarmoniCa și Sculptra la Juvena Timișoara. Rejuvenare facială profundă, efecte de lungă durată.",
     canonical: `${BASE_URL}/dermatologie-estetica/biostimulatori-colagen/`,
   },
-  "lipóliza-injectabila": {
+  "lipoliza-injectabila": {
     slug: "/dermatologie-estetica/lipoliza-injectabila/",
     title: "Lipoliză Injectabilă Timișoara – Lemon Bottle & Aqualix | Juvena",
     description:

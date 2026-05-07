@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { schemaOrganization, schemaWebsite } from "@/lib/data/schema";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -91,10 +89,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webSchema) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col antialiased">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+      <body className="min-h-screen antialiased">
+        {children}
       </body>
     </html>
   );
