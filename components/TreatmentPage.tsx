@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import type { FAQItem } from "@/lib/data/schema";
-import { schemaFAQ, schemaMedicalProcedure, schemaBreadcrumb } from "@/lib/data/schema";
+import { schemaFAQ, schemaMedicalProcedure, schemaBreadcrumb, schemaMedicalWebPage, schemaHowTo } from "@/lib/data/schema";
 
 const BASE_URL = "https://juvena-timisoara.ro";
 
@@ -49,6 +49,16 @@ export default function TreatmentPage({
   const breadcrumbSchema = schemaBreadcrumb(
     breadcrumbs.map((b) => ({ name: b.name, url: `${BASE_URL}${b.href}` }))
   );
+  const webPageSchema = schema
+    ? schemaMedicalWebPage({
+        name: schema.name,
+        description: schema.description,
+        url: schema.url,
+      })
+    : null;
+  const howToSchema = protocol && protocol.length > 0 && schema
+    ? schemaHowTo(schema.name, protocol)
+    : null;
 
   return (
     <>
@@ -66,6 +76,18 @@ export default function TreatmentPage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }}
+        />
+      )}
+      {webPageSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+        />
+      )}
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
       )}
       <Header />
@@ -96,7 +118,7 @@ export default function TreatmentPage({
               <div className="w-10 h-px bg-[var(--gold)] mb-8" />
 
               {/* Descriere */}
-              <div className="space-y-4 mb-12">
+              <div id="treatment-description" className="space-y-4 mb-12">
                 {description.map((para, i) => (
                   <p key={i} className="text-[var(--muted)] leading-relaxed">
                     {para}
@@ -106,7 +128,7 @@ export default function TreatmentPage({
 
               {/* Indicații */}
               {indications && indications.length > 0 && (
-                <div className="mb-10">
+                <div id="treatment-indications" className="mb-10">
                   <h2
                     className="text-[var(--dark)] text-xl mb-5"
                     style={{ fontFamily: "var(--font-serif)" }}
@@ -174,7 +196,7 @@ export default function TreatmentPage({
 
               {/* FAQ */}
               {faq && faq.length > 0 && (
-                <div>
+                <div id="treatment-faq">
                   <h2
                     className="text-[var(--dark)] text-2xl mb-8"
                     style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
