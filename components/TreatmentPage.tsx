@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import CtaSection from "@/components/CtaSection";
 import type { FAQItem } from "@/lib/data/schema";
 import { schemaFAQ, schemaMedicalProcedure, schemaBreadcrumb, schemaMedicalWebPage, schemaHowTo } from "@/lib/data/schema";
 
@@ -295,6 +296,7 @@ export default function TreatmentPage({
         </div>
       </section>
 
+      <CtaSection />
       <Footer />
     </>
   );

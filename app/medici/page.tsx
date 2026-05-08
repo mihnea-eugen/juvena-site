@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CtaSection from "@/components/CtaSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 
@@ -140,6 +141,7 @@ export default function MediciPage() {
         </div>
       </section>
 
+      <CtaSection />
       <Footer />
     </>
   );

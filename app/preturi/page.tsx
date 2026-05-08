@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CtaSection from "@/components/CtaSection";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import { CATEGORIES } from "@/lib/data/treatments";
 
@@ -201,33 +202,7 @@ export default function PreturiPage() {
         </div>
       </main>
 
-      {/* ── CTA ── */}
-      <section className="py-24 bg-[var(--dark)] relative overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background: "radial-gradient(ellipse 60% 80% at 70% 50%, rgba(196,154,60,0.06) 0%, transparent 70%)",
-          }}
-        />
-        <div className="container relative text-center">
-          <p className="text-[var(--gold)] text-[10px] tracking-[0.3em] uppercase mb-5">
-            Consultație personalizată
-          </p>
-          <h2
-            className="text-[var(--cream)] max-w-md mx-auto leading-[1.1] mb-5"
-            style={{ fontFamily: "var(--font-serif)", fontWeight: 300, fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
-          >
-            Estimare gratuită la prima consultație
-          </h2>
-          <p className="text-[var(--cream)]/45 mb-10 max-w-sm mx-auto text-sm leading-relaxed">
-            Medicul evaluează individual și îți recomandă protocolul optim înainte de orice procedură.
-          </p>
-          <Link href="/contact/" className="btn-gold px-10 py-4 text-xs tracking-widest">
-            Programare online
-          </Link>
-        </div>
-      </section>
-
+      <CtaSection />
       <Footer />
     </>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
+import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/ui/SectionHeader";
 import TreatmentCard from "@/components/ui/TreatmentCard";
@@ -236,27 +237,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CTA final ───────────────────────────────────────── */}
-      <section className="py-24 bg-[var(--gold)] relative overflow-hidden">
-        <div className="container relative text-center">
-          <h2
-            className="text-white text-4xl md:text-5xl mb-4"
-            style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
-          >
-            Începe cu o consultație
-          </h2>
-          <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto">
-            Fiecare tratament pornește de la o evaluare personalizată. Programează-ți consultația și discutăm împreună soluțiile potrivite pentru tine.
-          </p>
-          <Link
-            href="/contact/"
-            className="inline-flex items-center gap-2 bg-[var(--dark)] text-[var(--cream)] py-4 px-8 text-sm tracking-widest uppercase hover:bg-[#252438] transition-colors"
-          >
-            Programare online
-          </Link>
-        </div>
-      </section>
-
+      <CtaSection />
       <Footer />
     </>
   );
