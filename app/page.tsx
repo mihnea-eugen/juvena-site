@@ -29,7 +29,7 @@ const WHY_US = [
       </svg>
     ),
     title: "Medici specializați",
-    desc: "Toți procedurile sunt realizate exclusiv de medici cu specializare în dermatologie estetică.",
+    desc: "Toate procedurile sunt realizate exclusiv de medici cu specializare în dermatologie estetică.",
   },
   {
     icon: (
@@ -214,7 +214,7 @@ export default function HomePage() {
         <div className="container">
           <SectionHeader
             eyebrow="Populare"
-            title="Tratamente cel mai solicitate"
+            title="Cele mai solicitate tratamente"
             subtitle="O selecție din procedurile frecvent alese de pacienții noștri."
           />
 
