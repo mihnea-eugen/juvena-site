@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/ui/SectionHeader";
 import TreatmentCard from "@/components/ui/TreatmentCard";
-import { CATEGORIES } from "@/lib/data/treatments";
+import { CATEGORIES, flatTreatments } from "@/lib/data/treatments";
 import { schemaFAQ, FAQ_ACID_HIALURONIC } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
@@ -219,7 +219,7 @@ export default function HomePage() {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-            {CATEGORIES[0].treatments.slice(0, 9).map((t, i) => (
+            {flatTreatments(CATEGORIES[0]).slice(0, 9).map((t, i) => (
               <TreatmentCard
                 key={i}
                 treatment={t}

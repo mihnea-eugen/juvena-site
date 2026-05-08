@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import SectionHeader from "@/components/ui/SectionHeader";
 import TreatmentCard from "@/components/ui/TreatmentCard";
 import Breadcrumb from "@/components/ui/Breadcrumb";
-import { CATEGORIES } from "@/lib/data/treatments";
+import { CATEGORIES, flatTreatments } from "@/lib/data/treatments";
 import { schemaFAQ, FAQ_DERMATOSCOPIE } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 };
 
 const category = CATEGORIES.find((c) => c.slug === "dermatologie-medicala")!;
+const treatments = flatTreatments(category);
 
 const PROCEDURE_DETAILS = [
   {
@@ -132,7 +133,7 @@ export default function DermatologieMedicalaPage() {
                     </ul>
                   </div>
                   <div className="md:text-right">
-                    {category.treatments
+                    {treatments
                       .filter((t) => t.name.toLowerCase().includes(proc.title.toLowerCase().split(" ")[0].toLowerCase()))
                       .slice(0, 1)
                       .map((t, i) => (
@@ -162,10 +163,10 @@ export default function DermatologieMedicalaPage() {
             title="Lista de prețuri"
           />
           <div className="bg-white border border-[var(--cream-2)]">
-            {category.treatments.map((t, i) => (
+            {treatments.map((t, i) => (
               <div
                 key={i}
-                className={`grid grid-cols-[1fr_auto] gap-4 px-6 py-4 ${i < category.treatments.length - 1 ? "border-b border-[var(--cream-2)]" : ""}`}
+                className={`grid grid-cols-[1fr_auto] gap-4 px-6 py-4 ${i < treatments.length - 1 ? "border-b border-[var(--cream-2)]" : ""}`}
               >
                 <div>
                   <p className="text-[var(--dark)] text-sm font-medium">{t.name}</p>

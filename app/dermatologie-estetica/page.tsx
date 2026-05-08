@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import SectionHeader from "@/components/ui/SectionHeader";
 import TreatmentCard from "@/components/ui/TreatmentCard";
 import Breadcrumb from "@/components/ui/Breadcrumb";
-import { CATEGORIES } from "@/lib/data/treatments";
+import { CATEGORIES, flatTreatments } from "@/lib/data/treatments";
 
 export const metadata: Metadata = {
   title: "Dermatologie Estetică Timișoara – Acid Hialuronic & Botox | Juvena",
@@ -15,40 +15,37 @@ export const metadata: Metadata = {
 };
 
 const category = CATEGORIES.find((c) => c.slug === "dermatologie-estetica")!;
+const treatments = flatTreatments(category);
 
 const PROCEDURE_GROUPS = [
   {
     title: "Acid Hialuronic",
     href: "/dermatologie-estetica/acid-hialuronic/",
     desc: "Augmentare buze, volumizare, corecție riduri și conturare facială cu acid hialuronic.",
-    treatments: category.treatments.filter((t) => t.name.startsWith("Acid Hialuronic")),
+    treatments: treatments.filter((t) => t.name.toLowerCase().includes("buze") || t.name.toLowerCase().includes("frunte") || t.name.toLowerCase().includes("pomeți") || t.name.toLowerCase().includes("bărbie") || t.name.toLowerCase().includes("mandibulă") || t.name.toLowerCase().includes("cearcăne") || t.name.toLowerCase().includes("nas") || t.name.toLowerCase().includes("nazolabiale") || t.name.toLowerCase().includes("cicatrici") || t.name.toLowerCase().includes("tâmple") || t.name.toLowerCase().includes("mâini")),
   },
   {
     title: "Toxină Botulinică",
     href: "/dermatologie-estetica/toxina-botulinica/",
     desc: "Tratament riduri, babybotox, face slimming, Nefertiti lift și hiperhidroză.",
-    treatments: category.treatments.filter((t) =>
-      t.name.startsWith("Toxină") || t.name.startsWith("Babybotox") ||
-      t.name.startsWith("Gummy") || t.name.startsWith("Face") ||
-      t.name.startsWith("Nefertiti") || t.name.startsWith("Hiper")
+    treatments: treatments.filter((t) =>
+      /^\d zonă|^2 zone|^3 zone|^4 zone|babybotox|gummy|nefertiti|hiperhi|face slim/i.test(t.name)
     ),
   },
   {
     title: "Biostimulatori & Skinbooster",
     href: "/dermatologie-estetica/skinbooster/",
     desc: "Rejuvenare profundă cu HarmoniCa, Sculptra, Profhilo, Restylane și Redensity.",
-    treatments: category.treatments.filter((t) =>
-      t.name.startsWith("HarmoniCa") || t.name.startsWith("Sculptra") ||
-      t.name.startsWith("Skinbooster")
+    treatments: treatments.filter((t) =>
+      /harmoni|sculptra|profhilo|redensity|mesoheal|restylane/i.test(t.name)
     ),
   },
   {
     title: "Lipoliză & PRP",
     href: "/dermatologie-estetica/terapia-vampir-prp/",
     desc: "Reducerea grăsimii localizate și rejuvenare cu plasmă bogată în trombocite.",
-    treatments: category.treatments.filter((t) =>
-      t.name.startsWith("Lemon") || t.name.startsWith("Aqualix") ||
-      t.name.startsWith("Terapia")
+    treatments: treatments.filter((t) =>
+      /lemon|aqualix|vampir|prp/i.test(t.name)
     ),
   },
 ];
@@ -135,7 +132,7 @@ export default function DermatologieEsteticaPage() {
             title="Toate procedurile estetice"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-            {category.treatments.map((t, i) => (
+            {treatments.map((t, i) => (
               <TreatmentCard key={i} treatment={t} />
             ))}
           </div>

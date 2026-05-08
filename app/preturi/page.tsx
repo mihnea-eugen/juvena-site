@@ -12,18 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://juvena-timisoara.ro/preturi/" },
 };
 
-const CATEGORY_ICONS: Record<string, string> = {
-  "dermatologie-estetica": "◈",
-  "dermatologie-medicala": "◉",
-  "tratamente-faciale": "◇",
-};
-
 export default function PreturiPage() {
   return (
     <>
       <Header />
 
-      {/* Hero */}
+      {/* ── Hero ── */}
       <section className="bg-[var(--dark)] pt-32 pb-16">
         <div className="container">
           <Breadcrumb
@@ -33,232 +27,203 @@ export default function PreturiPage() {
               { name: "Prețuri", href: "/preturi/" },
             ]}
           />
-          <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase mb-4 mt-6">
-            Transparență totală
-          </p>
-          <h1
-            className="text-[var(--cream)] text-4xl md:text-5xl lg:text-6xl max-w-2xl leading-[1.08]"
-            style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
-          >
-            Prețuri clare,<br />fără surprize
-          </h1>
-          <p className="text-[var(--cream)]/55 mt-5 max-w-lg text-base leading-relaxed">
-            Consultul medical pre-procedural este inclus în prețul fiecărui tratament.
-            Prețurile finale pot varia în funcție de evaluarea individuală.
-          </p>
+          <div className="mt-6 max-w-2xl">
+            <p className="text-[var(--gold)] text-xs tracking-[0.25em] uppercase mb-5">
+              Listă de prețuri · 2026
+            </p>
+            <h1
+              className="text-[var(--cream)] leading-[1.05]"
+              style={{ fontFamily: "var(--font-serif)", fontWeight: 300, fontSize: "clamp(2.5rem, 5vw, 4rem)" }}
+            >
+              Tarife clare,<br />
+              <em style={{ fontStyle: "italic" }}>fără surprize</em>
+            </h1>
+            <p className="text-[var(--cream)]/50 mt-5 text-sm leading-relaxed max-w-md">
+              Consultul medical pre-procedural este inclus în tariful fiecărui tratament.
+              Costul final poate varia în funcție de evaluarea individuală.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Info bar */}
-      <div className="bg-[var(--gold)]/8 border-b border-[var(--gold)]/15">
-        <div className="container py-3.5 flex flex-wrap items-center gap-x-8 gap-y-2">
-          {[
-            "Consultul inclus în preț",
-            "Plată numerar & card",
-            "Medici certificați",
-          ].map((item) => (
-            <div key={item} className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-[var(--gold)] shrink-0" />
-              <span className="text-xs text-[var(--text)] tracking-wide">{item}</span>
-            </div>
+      {/* ── Anchors mobile ── */}
+      <div className="bg-[var(--dark)] border-t border-white/8 lg:hidden">
+        <div className="container py-3 flex gap-3 overflow-x-auto">
+          {CATEGORIES.map((cat) => (
+            <a
+              key={cat.slug}
+              href={`#${cat.slug}`}
+              className="shrink-0 text-[10px] tracking-[0.15em] uppercase text-[var(--cream)]/50 hover:text-[var(--gold)] transition-colors py-1 whitespace-nowrap"
+            >
+              {cat.name}
+            </a>
           ))}
         </div>
       </div>
 
-      {/* Main content */}
-      <div className="bg-[var(--cream)] min-h-screen">
-        <div className="container py-12 md:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-10 lg:gap-16">
+      {/* ── Price menu ── */}
+      <main className="bg-[var(--cream)]">
+        {CATEGORIES.map((cat, catIdx) => (
+          <section
+            key={cat.slug}
+            id={cat.slug}
+            className={`scroll-mt-24 ${catIdx % 2 === 0 ? "bg-[var(--cream)]" : "bg-white"}`}
+          >
+            {/* Category divider header */}
+            <div className="container">
+              <div className="py-14 md:py-20 border-b border-[var(--cream-3)]">
 
-            {/* ── Sticky category nav (desktop) ── */}
-            <aside className="hidden lg:block">
-              <nav className="sticky top-28 space-y-1">
-                <p className="text-[var(--muted)] text-xs tracking-[0.18em] uppercase mb-5">
-                  Categorii
-                </p>
-                {CATEGORIES.map((cat) => (
-                  <a
-                    key={cat.slug}
-                    href={`#${cat.slug}`}
-                    className="group flex items-center gap-3 py-2.5 px-3 text-sm text-[var(--muted)] hover:text-[var(--dark)] hover:bg-[var(--cream-2)] transition-all duration-200 rounded-sm"
-                  >
-                    <span className="text-[var(--gold)] opacity-60 group-hover:opacity-100 transition-opacity text-xs font-mono">
-                      {CATEGORY_ICONS[cat.slug] ?? "◈"}
-                    </span>
-                    <span className="leading-snug">{cat.name}</span>
-                  </a>
-                ))}
-                <div className="mt-8 pt-6 border-t border-[var(--cream-3)]">
-                  <Link
-                    href="/contact/"
-                    className="btn-gold w-full text-xs py-3 px-4 justify-center"
-                  >
-                    Programare
-                  </Link>
-                </div>
-              </nav>
-            </aside>
-
-            {/* ── Mobile category tabs ── */}
-            <div className="lg:hidden -mx-5 px-5 overflow-x-auto pb-1">
-              <div className="flex gap-2 min-w-max">
-                {CATEGORIES.map((cat) => (
-                  <a
-                    key={cat.slug}
-                    href={`#${cat.slug}`}
-                    className="shrink-0 px-4 py-2 text-xs tracking-wide border border-[var(--cream-3)] text-[var(--muted)] hover:border-[var(--gold)] hover:text-[var(--gold)] transition-colors whitespace-nowrap"
-                  >
-                    {cat.name}
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            {/* ── Category sections ── */}
-            <div className="space-y-14 lg:space-y-20">
-              {CATEGORIES.map((cat) => (
-                <section key={cat.slug} id={cat.slug} className="scroll-mt-28">
-
-                  {/* Category header */}
-                  <div className="mb-6">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span
-                        className="text-[var(--gold)] text-xs font-mono opacity-60"
-                        aria-hidden="true"
-                      >
-                        {CATEGORY_ICONS[cat.slug] ?? "◈"}
-                      </span>
-                      <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase">
-                        {cat.name}
-                      </p>
-                    </div>
+                {/* Top row: eyebrow + category link */}
+                <div className="flex items-end justify-between mb-8 gap-4">
+                  <div>
+                    <p className="text-[var(--gold)] text-[10px] tracking-[0.3em] uppercase mb-3">
+                      0{catIdx + 1} — {cat.name}
+                    </p>
                     <h2
-                      className="text-[var(--dark)] text-2xl md:text-3xl mb-2"
-                      style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
+                      className="text-[var(--dark)] leading-[1.05]"
+                      style={{
+                        fontFamily: "var(--font-serif)",
+                        fontWeight: 300,
+                        fontSize: "clamp(1.75rem, 3vw, 2.75rem)",
+                      }}
                     >
                       {cat.name}
                     </h2>
-                    <p className="text-[var(--muted)] text-sm leading-relaxed max-w-xl">
+                    <p className="text-[var(--muted)] text-sm mt-2 max-w-lg leading-relaxed">
                       {cat.description}
                     </p>
-                    <div className="mt-4 w-8 h-px bg-[var(--gold)]" />
                   </div>
-
-                  {/* Treatment rows */}
-                  <div className="bg-white border border-[var(--cream-2)] overflow-hidden">
-
-                    {/* Column labels */}
-                    <div className="grid grid-cols-[1fr_auto] gap-4 px-5 py-3 bg-[var(--cream-2)]/60 border-b border-[var(--cream-2)]">
-                      <span className="text-[var(--muted)] text-xs tracking-widest uppercase">
-                        Tratament
-                      </span>
-                      <span className="text-[var(--muted)] text-xs tracking-widest uppercase">
-                        RON
-                      </span>
-                    </div>
-
-                    {/* Rows */}
-                    <div className="divide-y divide-[var(--cream-2)]/70">
-                      {cat.treatments.map((t, i) => (
-                        <div key={i} className="price-row">
-                          {/* Name + detail */}
-                          <div className="min-w-0 pr-4">
-                            <p className="text-[var(--dark)] text-sm font-medium leading-snug">
-                              {t.name}
-                            </p>
-                            {t.detail && (
-                              <p className="text-[var(--muted)] text-xs mt-0.5 leading-snug">
-                                {t.detail}
-                              </p>
-                            )}
-                          </div>
-
-                          {/* Price */}
-                          <div className="text-right shrink-0">
-                            <span
-                              className="text-[var(--gold)] text-xl leading-none"
-                              style={{ fontFamily: "var(--font-serif)" }}
-                            >
-                              {t.price}
-                            </span>
-                            <span className="text-[var(--muted)] text-[10px] ml-1 tracking-wide">
-                              RON
-                            </span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Footer: link to category page */}
-                    <div className="px-5 py-4 bg-[var(--cream)]/60 border-t border-[var(--cream-2)] flex flex-wrap items-center justify-between gap-3">
-                      <span className="text-xs text-[var(--muted)]">
-                        Consultul pre-procedural inclus
-                      </span>
-                      <Link
-                        href={`/${cat.slug}/`}
-                        className="text-xs text-[var(--gold)] hover:text-[var(--gold-light)] tracking-widest uppercase flex items-center gap-1.5 transition-colors"
-                      >
-                        <span>Detalii tratamente</span>
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                </section>
-              ))}
-
-              {/* ── Disclaimer ── */}
-              <section className="border-t border-[var(--cream-3)] pt-10">
-                <h2
-                  className="text-[var(--dark)] text-xl mb-4"
-                  style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
-                >
-                  Informații despre prețuri
-                </h2>
-                <div className="space-y-3 text-sm text-[var(--muted)] leading-relaxed max-w-2xl">
-                  <p>
-                    Prețurile de mai sus sunt orientative și includ procedura standard descrisă.
-                    Costul final poate diferi în funcție de cantitatea de produs utilizată,
-                    complexitatea cazului și protocolul individualizat stabilit de medic.
-                  </p>
-                  <p>
-                    Nu există taxe separate de consultație pentru procedurile programate.
-                    Evaluarea medicală pre-procedurală este inclusă în prețul tratamentului.
-                  </p>
-                  <p>
-                    Acceptăm plata în numerar și cu cardul.
-                  </p>
+                  <Link
+                    href={`/${cat.slug}/`}
+                    className="hidden md:flex shrink-0 items-center gap-2 text-xs tracking-widest uppercase text-[var(--muted)] hover:text-[var(--gold)] transition-colors"
+                  >
+                    <span>Detalii</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
                 </div>
-              </section>
+
+                {/* Groups */}
+                <div className="space-y-0">
+                  {cat.groups.map((group, gIdx) => (
+                    <div
+                      key={gIdx}
+                      className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-0 border-t border-[var(--cream-3)] first:border-t-0"
+                    >
+                      {/* Group label — left column */}
+                      <div className="pt-5 pb-2 md:pb-5 pr-0 md:pr-8">
+                        {group.slug ? (
+                          <Link
+                            href={`/${group.slug}/`}
+                            className="group inline-flex items-center gap-1.5"
+                          >
+                            <span className="text-[11px] tracking-[0.18em] uppercase text-[var(--muted)] group-hover:text-[var(--gold)] transition-colors font-medium">
+                              {group.label}
+                            </span>
+                            <svg className="w-2.5 h-2.5 text-[var(--gold)] opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                          </Link>
+                        ) : (
+                          <span className="text-[11px] tracking-[0.18em] uppercase text-[var(--muted)] font-medium">
+                            {group.label}
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Treatments — right column */}
+                      <div className="pb-5 md:pt-5 md:border-l md:border-[var(--cream-3)] md:pl-8">
+                        {group.treatments.map((t, tIdx) => (
+                          <div
+                            key={tIdx}
+                            className="flex items-baseline justify-between gap-4 py-2.5 border-b border-[var(--cream-3)]/50 last:border-0 group/row hover:bg-[var(--gold)]/[0.03] -mx-2 px-2 transition-colors"
+                          >
+                            {/* Name */}
+                            <div className="min-w-0">
+                              <span className="text-[var(--dark)] text-sm">
+                                {t.name}
+                              </span>
+                              {t.detail && (
+                                <span className="text-[var(--muted)] text-xs ml-2 opacity-70">
+                                  {t.detail}
+                                </span>
+                              )}
+                            </div>
+
+                            {/* Leader + Price */}
+                            <div className="shrink-0 flex items-baseline gap-1.5">
+                              <span
+                                className="text-[var(--gold)] tabular-nums"
+                                style={{ fontFamily: "var(--font-serif)", fontSize: "1.125rem", lineHeight: 1 }}
+                              >
+                                {t.price}
+                              </span>
+                              <span className="text-[var(--muted)] text-[10px] tracking-wider uppercase">
+                                ron
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Mobile link */}
+                <div className="mt-6 md:hidden">
+                  <Link
+                    href={`/${cat.slug}/`}
+                    className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-[var(--gold)]"
+                  >
+                    <span>Detalii {cat.name}</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                </div>
+
+              </div>
             </div>
+          </section>
+        ))}
+
+        {/* ── Note ── */}
+        <div className="container py-14">
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="w-8 h-px bg-[var(--gold)] mx-auto mb-6" />
+            <p className="text-[var(--muted)] text-sm leading-relaxed">
+              Prețurile sunt orientative și pot varia în funcție de cantitatea de produs
+              utilizată și complexitatea cazului. Consultul pre-procedural este inclus.
+              Plata se poate efectua în numerar sau cu cardul.
+            </p>
           </div>
         </div>
-      </div>
+      </main>
 
-      {/* CTA */}
-      <section className="py-20 bg-[var(--dark)] relative overflow-hidden">
+      {/* ── CTA ── */}
+      <section className="py-24 bg-[var(--dark)] relative overflow-hidden">
         <div
-          className="absolute inset-0 opacity-[0.03] pointer-events-none"
+          className="absolute inset-0 pointer-events-none"
           style={{
-            backgroundImage: "radial-gradient(circle at 60% 50%, #C49A3C 0%, transparent 65%)",
+            background: "radial-gradient(ellipse 60% 80% at 70% 50%, rgba(196,154,60,0.06) 0%, transparent 70%)",
           }}
         />
-        <div className="container text-center relative">
-          <p className="text-[var(--gold)] text-xs tracking-[0.2em] uppercase mb-4">
-            Pasul următor
+        <div className="container relative text-center">
+          <p className="text-[var(--gold)] text-[10px] tracking-[0.3em] uppercase mb-5">
+            Consultație personalizată
           </p>
           <h2
-            className="text-[var(--cream)] text-3xl md:text-4xl mb-4 max-w-lg mx-auto leading-[1.1]"
-            style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
+            className="text-[var(--cream)] max-w-md mx-auto leading-[1.1] mb-5"
+            style={{ fontFamily: "var(--font-serif)", fontWeight: 300, fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            Ai întrebări despre prețuri?
+            Estimare gratuită la prima consultație
           </h2>
-          <p className="text-[var(--cream)]/50 mb-8 max-w-md mx-auto text-sm leading-relaxed">
-            Programează o consultație pentru un plan de tratament și o estimare personalizată.
+          <p className="text-[var(--cream)]/45 mb-10 max-w-sm mx-auto text-sm leading-relaxed">
+            Medicul evaluează individual și îți recomandă protocolul optim înainte de orice procedură.
           </p>
-          <Link href="/contact/" className="btn-gold px-8 py-3.5">
-            Programare consultație
+          <Link href="/contact/" className="btn-gold px-10 py-4 text-xs tracking-widest">
+            Programare online
           </Link>
         </div>
       </section>

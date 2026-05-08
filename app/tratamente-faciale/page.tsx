@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import SectionHeader from "@/components/ui/SectionHeader";
 import TreatmentCard from "@/components/ui/TreatmentCard";
 import Breadcrumb from "@/components/ui/Breadcrumb";
-import { CATEGORIES } from "@/lib/data/treatments";
+import { CATEGORIES, flatTreatments } from "@/lib/data/treatments";
 
 export const metadata: Metadata = {
   title: "Tratamente Faciale Timișoara – Peeling & Curățare | Juvena",
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 };
 
 const category = CATEGORIES.find((c) => c.slug === "tratamente-faciale")!;
+const treatments = flatTreatments(category);
 
 const PROCEDURES = [
   {
@@ -112,7 +113,7 @@ export default function TratamenteFacialeePage() {
           {/* Prețuri */}
           <SectionHeader eyebrow="Prețuri" title="Lista de prețuri faciale" />
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-            {category.treatments.map((t, i) => (
+            {treatments.map((t, i) => (
               <TreatmentCard key={i} treatment={t} />
             ))}
           </div>
