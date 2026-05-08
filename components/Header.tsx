@@ -79,16 +79,16 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="container flex items-center justify-between h-18 md:h-20">
+      <div className="container flex items-center justify-between h-20 md:h-24">
 
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0" aria-label="Juvena Clinic Timișoara">
           <Image
             src="/images/logo.png"
             alt="Juvena Clinic Timișoara"
-            width={130}
-            height={121}
-            className="h-12 w-auto"
+            width={160}
+            height={149}
+            className="h-14 md:h-16 w-auto"
             priority
           />
         </Link>
