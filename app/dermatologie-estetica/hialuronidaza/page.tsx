@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_HIALURONIDAZA } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Injecții Hialuronidază Timișoara – Dizolvare Acid Hialuronic | Juvena",
@@ -36,6 +37,7 @@ export default function Page() {
       prices={[
         { label: "Hialuronidază – dizolvare acid hialuronic", price: "600" }
       ]}
+      faq={FAQ_HIALURONIDAZA}
       relatedLinks={[
         { label: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" }
       ]}

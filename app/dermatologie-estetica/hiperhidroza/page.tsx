@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_HIPERHIDROZA } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Tratament Hiperhidroză Timișoara – Injecții Toxină Botulinică | Juvena",
@@ -38,6 +39,7 @@ export default function Page() {
       prices={[
         { label: "Hiperhidroză (axilă / palmar / plantar)", price: "1.800 – 2.000" }
       ]}
+      faq={FAQ_HIPERHIDROZA}
       relatedLinks={[
         { label: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
         { label: "Face Slimming", href: "/dermatologie-estetica/face-slimming/" }

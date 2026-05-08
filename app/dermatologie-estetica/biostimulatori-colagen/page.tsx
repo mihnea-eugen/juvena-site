@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_BIOSTIMULATORI } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Injecții Biostimulatori Colagen Timișoara – HarmoniCa & Sculptra | Juvena",
@@ -58,6 +59,7 @@ export default function BiostimulatoriPage() {
         price: "2.000",
         bodyLocation: "față",
       }}
+      faq={FAQ_BIOSTIMULATORI}
       relatedLinks={[
         { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" },
         { label: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },

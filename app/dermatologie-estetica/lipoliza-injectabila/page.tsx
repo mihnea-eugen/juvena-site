@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_LIPOLIZA } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Lipoliză Injectabilă Timișoara – Lemon Bottle & Aqualix | Juvena",
@@ -57,6 +58,7 @@ export default function LipolizaPage() {
         price: "600",
         bodyLocation: "față, corp",
       }}
+      faq={FAQ_LIPOLIZA}
       relatedLinks={[
         { label: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },
         { label: "Terapia Vampir PRP", href: "/dermatologie-estetica/terapia-vampir-prp/" },

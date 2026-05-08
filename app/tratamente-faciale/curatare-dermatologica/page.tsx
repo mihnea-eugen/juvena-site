@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_CURATARE } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Curățare Dermatologică Profesională Timișoara | Juvena",
@@ -33,6 +34,7 @@ export default function Page() {
       prices={[
         { label: "Curățare Dermatologică", price: "250" }
       ]}
+      faq={FAQ_CURATARE}
       relatedLinks={[
         { label: "Peeling Chimic", href: "/tratamente-faciale/peeling-chimic/" },
         { label: "Dermapen PRP", href: "/tratamente-faciale/dermapen/" }

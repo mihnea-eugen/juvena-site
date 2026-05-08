@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_PRP } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Terapia Vampir PRP Timișoara – Facial, Scalp, Corp | Juvena",
@@ -57,6 +58,7 @@ export default function TerapiaVampirPage() {
         price: "750",
         bodyLocation: "față, scalp, corp",
       }}
+      faq={FAQ_PRP}
       relatedLinks={[
         { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" },
         { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },

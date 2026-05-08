@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_NEFERTITI } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Nefertiti Lift Timișoara – Lifting Gât Fără Bisturiu | Juvena",
@@ -36,6 +37,7 @@ export default function Page() {
       prices={[
         { label: "Nefertiti lift – riduri gât", price: "1.200" }
       ]}
+      faq={FAQ_NEFERTITI}
       relatedLinks={[
         { label: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
         { label: "Acid Hialuronic – Conturare mandibulă", href: "/dermatologie-estetica/acid-hialuronic/" }

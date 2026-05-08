@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_PEELING } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Peeling Chimic Timișoara – Glow Peel & Magic Peel | Juvena",
@@ -40,6 +41,7 @@ export default function Page() {
         { label: "Glow Peel", detail: "Peeling chimic luminozitate", price: "450" },
         { label: "Magic Peel", detail: "Peeling anti-aging & anti-pete", price: "600" }
       ]}
+      faq={FAQ_PEELING}
       relatedLinks={[
         { label: "Curățare Dermatologică", href: "/tratamente-faciale/curatare-dermatologica/" },
         { label: "Dermapen PRP", href: "/tratamente-faciale/dermapen/" },

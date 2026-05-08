@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_DERMAPEN } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Dermapen Timișoara – Microneedling PRP Facial | Juvena",
@@ -42,6 +43,7 @@ export default function Page() {
         { label: "Terapia Vampir Dermapen – față / gât / decolteu", detail: "per zonă", price: "750" },
         { label: "Terapia Vampir Dermapen – vergeturi / cicatrici", detail: "per zonă", price: "750" }
       ]}
+      faq={FAQ_DERMAPEN}
       relatedLinks={[
         { label: "Terapia Vampir PRP", href: "/dermatologie-estetica/terapia-vampir-prp/" },
         { label: "Peeling Chimic", href: "/tratamente-faciale/peeling-chimic/" },

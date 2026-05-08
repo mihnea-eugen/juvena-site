@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_FACE_SLIMMING } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Face Slimming Timișoara – Bruxism & Maseter | Juvena",
@@ -36,6 +37,7 @@ export default function Page() {
       prices={[
         { label: "Face Slimming – mușchiul maseter", detail: "Bruxism inclus", price: "1.200" }
       ]}
+      faq={FAQ_FACE_SLIMMING}
       relatedLinks={[
         { label: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
         { label: "Nefertiti Lift", href: "/dermatologie-estetica/nefertiti-lift/" }

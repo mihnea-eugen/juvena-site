@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_WINTHER_GLOW } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Winther Glow Timișoara – Tratament Hidratare Intensiv | Juvena",
@@ -32,6 +33,7 @@ export default function Page() {
       prices={[
         { label: "Winther Glow", detail: "Tratament sezonier hidratare", price: "600" }
       ]}
+      faq={FAQ_WINTHER_GLOW}
       relatedLinks={[
         { label: "Curățare Dermatologică", href: "/tratamente-faciale/curatare-dermatologica/" },
         { label: "Peeling Chimic", href: "/tratamente-faciale/peeling-chimic/" },

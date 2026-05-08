@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_DERMATOSCOPIE } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Dermatoscopie Digitală Timișoara – Analiză Alunițe | Juvena",
@@ -34,6 +35,7 @@ export default function Page() {
       prices={[
         { label: "Dermatoscopie digitală", detail: "Analiză alunițe / leziuni", price: "200" }
       ]}
+      faq={FAQ_DERMATOSCOPIE}
       relatedLinks={[
         { label: "Consult Dermatologic", href: "/dermatologie-medicala/consult-dermatologic/" },
         { label: "Mici intervenții dermatologice", href: "/dermatologie-medicala/electrocauterizare/" }

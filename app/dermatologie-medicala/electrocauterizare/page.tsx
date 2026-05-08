@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_ELECTROCAUTERIZARE } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Electrocauterizare Timișoara – Xantelasme & Papiloame | Juvena",
@@ -39,6 +40,7 @@ export default function Page() {
         { label: "Mici intervenții dermatologice", price: "100 – 500" },
         { label: "Electrocauterizare xantelasme / papiloame", price: "300 – 1.000" }
       ]}
+      faq={FAQ_ELECTROCAUTERIZARE}
       relatedLinks={[
         { label: "Consult Dermatologic", href: "/dermatologie-medicala/consult-dermatologic/" },
         { label: "Dermatoscopie", href: "/dermatologie-medicala/dermatoscopie/" }

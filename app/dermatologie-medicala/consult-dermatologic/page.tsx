@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
+import { FAQ_CONSULT } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
   title: "Consult Dermatologic Timișoara – Programare Rapidă | Juvena",
@@ -35,6 +36,7 @@ export default function Page() {
         { label: "Consult Dermatologic", price: "200" },
         { label: "Control Dermatologic", price: "100" }
       ]}
+      faq={FAQ_CONSULT}
       relatedLinks={[
         { label: "Dermatoscopie Digitală", href: "/dermatologie-medicala/dermatoscopie/" },
         { label: "Electrocauterizare", href: "/dermatologie-medicala/electrocauterizare/" }
