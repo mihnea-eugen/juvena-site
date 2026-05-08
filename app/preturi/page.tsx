@@ -137,11 +137,11 @@ export default function PreturiPage() {
                         {group.treatments.map((t, tIdx) => (
                           <div
                             key={tIdx}
-                            className="flex items-baseline justify-between gap-4 py-2.5 border-b border-[var(--cream-3)]/50 last:border-0 group/row hover:bg-[var(--gold)]/[0.03] -mx-2 px-2 transition-colors"
+                            className="flex items-baseline justify-between gap-4 py-3.5 border-b border-[var(--cream-3)]/50 last:border-0 group/row hover:bg-[var(--gold)]/[0.03] -mx-2 px-2 transition-colors"
                           >
                             {/* Name */}
                             <div className="min-w-0">
-                              <span className="text-[var(--dark)] text-sm">
+                              <span className="text-[var(--dark)] text-[0.9375rem] leading-snug">
                                 {t.name}
                               </span>
                               {t.detail && (
@@ -152,14 +152,14 @@ export default function PreturiPage() {
                             </div>
 
                             {/* Leader + Price */}
-                            <div className="shrink-0 flex items-baseline gap-1.5">
+                            <div className="shrink-0 flex items-baseline gap-2">
                               <span
                                 className="text-[var(--gold)] tabular-nums"
-                                style={{ fontFamily: "var(--font-serif)", fontSize: "1.125rem", lineHeight: 1 }}
+                                style={{ fontFamily: "var(--font-serif)", fontSize: "1.625rem", lineHeight: 1 }}
                               >
                                 {t.price}
                               </span>
-                              <span className="text-[var(--muted)] text-[10px] tracking-wider uppercase">
+                              <span className="text-[var(--muted)] text-[11px] tracking-wider uppercase">
                                 ron
                               </span>
                             </div>
