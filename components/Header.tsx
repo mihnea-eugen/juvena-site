@@ -11,6 +11,7 @@ type NavItem =
   | { label: string; href: string; children: Category[] };
 
 const NAV_ITEMS: NavItem[] = [
+  { label: "Acasă", href: "/" },
   { label: "Despre noi", href: "/despre-noi/" },
   { label: "Medici", href: "/medici/" },
   {
