@@ -3,9 +3,9 @@ import TreatmentPage from "@/components/TreatmentPage";
 import { FAQ_ACID_HIALURONIC } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
-  title: "Acid Hialuronic Timișoara – Buze, Pomeți, Cearcăne | Juvena",
+  title: "Injecții Acid Hialuronic Timișoara – Buze, Pomeți, Cearcăne | Juvena",
   description:
-    "Augmentare buze, volumizare frunte, corecție pomeți și cearcăne cu acid hialuronic la Juvena Timișoara. Rezultate naturale, medic specialist.",
+    "Injecții acid hialuronic la Juvena Timișoara: augmentare buze, volumizare pomeți, corecție cearcăne și riduri. Medic specialist, rezultate naturale.",
   alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/acid-hialuronic/" },
 };
 
@@ -20,7 +20,7 @@ export default function AcidHialuronicPage() {
         { name: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Acid Hialuronic"
+      title="Injecții acid hialuronic"
       subtitle="Conturare și volumizare facială cu rezultate naturale, realizate de medic specialist."
       description={[
         "Acidul hialuronic este una dintre substanțele cel mai frecvent utilizate în medicina estetică modernă. Este o substanță naturală produsă de organism, cu rol esențial în hidratarea și structurarea țesuturilor. Odată cu vârsta, producția sa scade, ceea ce duce la pierderea volumului facial și apariția ridurilor.",

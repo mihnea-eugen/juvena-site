@@ -3,9 +3,9 @@ import TreatmentPage from "@/components/TreatmentPage";
 import { FAQ_TOXINA_BOTULINICA } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
-  title: "Toxină Botulinică Timișoara – Riduri & Botox | Juvena",
+  title: "Injecții Toxină Botulinică Timișoara – Riduri & Botox | Juvena",
   description:
-    "Tratament cu toxină botulinică pentru riduri frunte, glabelă și periocular. Babybotox, face slimming și Nefertiti lift la Juvena Timișoara.",
+    "Injecții toxină botulinică la Juvena Timișoara: riduri frunte, glabelă, periocular. Babybotox, face slimming, Nefertiti lift. Medic specialist dermatolog.",
   alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/toxina-botulinica/" },
 };
 
@@ -20,7 +20,7 @@ export default function ToxinaBotulinicaPage() {
         { name: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Toxină Botulinică"
+      title="Injecții toxină botulinică"
       subtitle="Tratament de referință pentru riduri de expresie, babybotox preventiv, face slimming și hiperhidroză."
       description={[
         "Toxina botulinică este una dintre cele mai studiate și sigure substanțe din medicina estetică, cu utilizare clinică de peste 30 de ani. Acționează prin relaxarea temporară a mușchilor tratați, reducând ridurile de expresie și prevenind formarea unora noi.",
