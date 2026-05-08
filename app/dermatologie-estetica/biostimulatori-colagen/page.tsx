@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
 
 export const metadata: Metadata = {
-  title: "Biostimulatori Colagen Timișoara – HarmoniCa & Sculptra | Juvena",
+  title: "Injecții Biostimulatori Colagen Timișoara – HarmoniCa & Sculptra | Juvena",
   description:
     "Stimulează producția naturală de colagen cu HarmoniCa și Sculptra la Juvena Timișoara. Rejuvenare facială profundă, efecte de lungă durată.",
   alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/biostimulatori-colagen/" },
@@ -17,7 +17,7 @@ export default function BiostimulatoriPage() {
         { name: "Biostimulatori Colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Biostimulatori de Colagen"
+      title="Injecții biostimulatori colagen Timișoara"
       subtitle="HarmoniCa și Sculptra — rejuvenare facială profundă prin stimularea naturală a colagenului."
       description={[
         "Biostimulatorii de colagen sunt o categorie distinctă de produse injectabile care nu adaugă volum direct, ci stimulează fibroblastele din piele să producă colagen propriu. Rezultatele sunt mai graduale decât ale fillerelor, dar mai naturale și de mai lungă durată.",

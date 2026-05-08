@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
 
 export const metadata: Metadata = {
-  title: "Tratament Hiperhidroză Timișoara – Toxină Botulinică | Juvena",
+  title: "Tratament Hiperhidroză Timișoara – Injecții Toxină Botulinică | Juvena",
   description: "Soluție eficientă pentru transpirație excesivă axilară, palmară și plantară cu toxină botulinică la clinica Juvena din Timișoara.",
   alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/hiperhidroza/" },
 };
@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Hiperhidroză", href: "/dermatologie-estetica/hiperhidroza/" }
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Hiperhidroză"
+      title="Tratament hiperhidroză Timișoara"
       subtitle="Transpirație excesivă tratată non-invaziv cu toxină botulinică – efect de până la 12 luni."
       description={[
         "Hiperhidroza (transpirația excesivă) este o afecțiune care afectează calitatea vieții prin transpirație abundentă, necontrolată de factori termici sau emoționali. Localizările cel mai frecvent tratate sunt axilele, palmele și tălpile.",

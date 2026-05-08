@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Peeling Chimic", href: "/tratamente-faciale/peeling-chimic/" }
       ]}
       eyebrow="Tratamente Faciale"
-      title="Peeling Chimic"
+      title="Peeling chimic Timișoara"
       subtitle="Exfoliere chimică controlată pentru ten radiant, anti-aging și uniformizarea tonului."
       description={[
         "Peelingul chimic folosește acizi (AHA, BHA, TCA, retinol) în concentrații controlate pentru a exfolia straturile superficiale ale pielii, stimulând regenerarea celulară și producția de colagen.",

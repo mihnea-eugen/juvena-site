@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Curățare Dermatologică", href: "/tratamente-faciale/curatare-dermatologica/" }
       ]}
       eyebrow="Tratamente Faciale"
-      title="Curățare Dermatologică"
+      title="Curățare dermatologică Timișoara"
       subtitle="Curățare facială profundă realizată de medic dermatolog, adaptată tipului tău de ten."
       description={[
         "Curățarea dermatologică profesională este o procedură realizată de medic sau asistent medical sub supraveghere medicală, adaptată tipului specific de ten și problemelor existente.",

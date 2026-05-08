@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Dermatoscopie", href: "/dermatologie-medicala/dermatoscopie/" }
       ]}
       eyebrow="Dermatologie Medicală"
-      title="Dermatoscopie Digitală"
+      title="Dermatoscopie digitală Timișoara"
       subtitle="Analiza non-invazivă a alunițelor și leziunilor pigmentare – depistare precoce cu tehnologie digitală."
       description={[
         "Dermatoscopia digitală este metoda gold standard pentru evaluarea alunițelor și a leziunilor pigmentare. Folosind un dermatoscop cu iluminare polarizată, medicul poate analiza structuri cutanate invizibile cu ochiul liber, identificând semne precoce de malignitate.",

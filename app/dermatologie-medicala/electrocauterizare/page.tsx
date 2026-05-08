@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Electrocauterizare", href: "/dermatologie-medicala/electrocauterizare/" }
       ]}
       eyebrow="Dermatologie Medicală"
-      title="Electrocauterizare"
+      title="Electrocauterizare Timișoara"
       subtitle="Îndepărtarea leziunilor cutanate benigne – procedură rapidă, minim invazivă."
       description={[
         "Electrocauterizarea folosește curentul electric de înaltă frecvență pentru a îndepărta leziunile cutanate benigne superficiale. Este o procedură rapidă, minim invazivă, realizată în cabinet sub anestezie locală.",

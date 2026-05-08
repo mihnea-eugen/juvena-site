@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Consult Dermatologic", href: "/dermatologie-medicala/consult-dermatologic/" }
       ]}
       eyebrow="Dermatologie Medicală"
-      title="Consult Dermatologic"
+      title="Consult dermatologic Timișoara"
       subtitle="Evaluare completă a stării pielii, diagnostic diferențial și plan de tratament personalizat."
       description={[
         "Consultul dermatologic la Juvena Timișoara este realizat de medic specialist dermatolog și include o evaluare completă a pielii, a leziunilor existente și a antecedentelor personale și familiale relevante.",

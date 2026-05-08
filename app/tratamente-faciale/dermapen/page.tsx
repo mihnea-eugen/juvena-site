@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
 
 export const metadata: Metadata = {
-  title: "Terapia Vampir Dermapen Timișoara – PRP Facial | Juvena",
+  title: "Dermapen Timișoara – Microneedling PRP Facial | Juvena",
   description: "Microneedling combinat cu PRP pentru față, gât, decolteu și tratamentul vergeturilor și cicatricilor la Juvena Timișoara.",
   alternates: { canonical: "https://juvena-timisoara.ro/tratamente-faciale/dermapen/" },
 };
@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Dermapen PRP", href: "/tratamente-faciale/dermapen/" }
       ]}
       eyebrow="Tratamente Faciale"
-      title="Terapia Vampir Dermapen"
+      title="Dermapen Timișoara"
       subtitle="Microneedling cu PRP – rejuvenare facială profundă, tratament vergeturi și cicatrici."
       description={[
         "Terapia Vampir cu Dermapen combină microneedling-ul (crearea de microcanale în piele cu ace ultra-fine) cu aplicarea de PRP (plasmă bogată în trombocite) din sângele propriu al pacientului.",

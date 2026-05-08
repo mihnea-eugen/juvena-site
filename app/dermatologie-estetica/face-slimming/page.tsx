@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
 
 export const metadata: Metadata = {
-  title: "Face Slimming & Bruxism Timișoara – Maseter | Juvena",
+  title: "Face Slimming Timișoara – Bruxism & Maseter | Juvena",
   description: "Subțierea feței prin relaxarea mușchiului maseter cu toxină botulinică. Tratament pentru bruxism și remodelare facială la Juvena Timișoara.",
   alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/face-slimming/" },
 };
@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Face Slimming", href: "/dermatologie-estetica/face-slimming/" }
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Face Slimming – Maseter"
+      title="Face Slimming Timișoara"
       subtitle="Subțierea feței și tratamentul bruxismului prin relaxarea mușchiului maseter."
       description={[
         "Mușchiul maseter, responsabil de mișcarea de masticație, poate fi hipertrofiat din cauza bruxismului (scrâșnitul dinților) sau a obiceiului de a mânca gumă. Aceasta dă feței o formă pătrată, masculinizată.",

@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Nefertiti Lift", href: "/dermatologie-estetica/nefertiti-lift/" }
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Nefertiti Lift"
+      title="Nefertiti Lift Timișoara"
       subtitle="Redefinirea conturului gâtului și mandibulei cu toxină botulinică – fără bisturiu."
       description={[
         "Tehnica Nefertiti lift relaxează mușchiul platysma din gât, care trage în jos conturul mandibular. Prin injectarea toxinei botulinice de-a lungul mandibulei și în benzile platysma, se obține un efect de lifting al gâtului și definire a liniei maxilare.",

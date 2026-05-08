@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import TreatmentPage from "@/components/TreatmentPage";
 
 export const metadata: Metadata = {
-  title: "Winther Glow Timișoara – Tratament Hidratare Sezonier | Juvena",
+  title: "Winther Glow Timișoara – Tratament Hidratare Intensiv | Juvena",
   description: "Tratament intensiv de hidratare și revigorare a pielii pentru sezonul rece. Winther Glow disponibil la clinica Juvena din Timișoara.",
   alternates: { canonical: "https://juvena-timisoara.ro/tratamente-faciale/winther-glow/" },
 };
@@ -16,7 +16,7 @@ export default function Page() {
         { name: "Winther Glow", href: "/tratamente-faciale/winther-glow/" }
       ]}
       eyebrow="Tratamente Faciale"
-      title="Winther Glow"
+      title="Winther Glow Timișoara"
       subtitle="Tratament facial intensiv de hidratare și luminozitate – ideal pentru sezonul rece."
       description={[
         "Winther Glow este un tratament sezonier special conceput pentru a combate efectele sezonului rece asupra pielii: deshidratare, aspect plictisit, sensibilitate crescută și pierderea luminozității.",

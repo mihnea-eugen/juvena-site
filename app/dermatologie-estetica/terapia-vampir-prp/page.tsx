@@ -17,7 +17,7 @@ export default function TerapiaVampirPage() {
         { name: "Terapia Vampir PRP", href: "/dermatologie-estetica/terapia-vampir-prp/" },
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Terapia Vampir PRP"
+      title="Terapia Vampir PRP Timișoara"
       subtitle="Rejuvenare cu plasmă bogată în trombocite — procedură 100% autologă, naturală."
       description={[
         "Terapia Vampir (PRP – Platelet Rich Plasma) este o procedură de rejuvenare care folosește plasma proprie a pacientului, îmbogățită cu trombocite. Trombocitele conțin factori de creștere care stimulează regenerarea celulară, producția de colagen și elastină, și îmbunătățesc calitatea pielii.",

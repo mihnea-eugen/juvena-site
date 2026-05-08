@@ -17,7 +17,7 @@ export default function LipolizaPage() {
         { name: "Lipoliză Injectabilă", href: "/dermatologie-estetica/lipoliza-injectabila/" },
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Lipoliză Injectabilă"
+      title="Lipoliză injectabilă Timișoara"
       subtitle="Reducerea non-chirurgicală a depozitelor de grăsime localizată cu Lemon Bottle și Aqualix."
       description={[
         "Lipoliza injectabilă este o metodă non-chirurgicală pentru reducerea depozitelor localizate de grăsime care nu răspund la dietă și exerciții fizice. Se bazează pe injectarea unor substanțe lipolitice direct în stratul de grăsime subcutanat, care descompun adipocitele.",
