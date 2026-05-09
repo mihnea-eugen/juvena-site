@@ -447,7 +447,7 @@ export const FAQ_ACID_HIALURONIC: FAQItem[] = [
   {
     question: "Cât durează procedura de acid hialuronic?",
     answer:
-      "Procedura de injectare a acidului hialuronic la Juvena Timișoara durează între 15 și 30 de minute. Rezultatele sunt vizibile imediat, cu o îmbunătățire progresivă în primele 2 săptămâni pe măsură ce produsul se integrează în țesuturi.",
+      "Injecțiile de acid hialuronic la Juvena Timișoara durează între 15 și 30 de minute. Rezultatele sunt vizibile imediat, cu o îmbunătățire progresivă în primele 2 săptămâni pe măsură ce produsul se integrează în țesuturi.",
   },
   {
     question: "Există contraindicații pentru acid hialuronic?",
@@ -664,7 +664,7 @@ export const FAQ_NEFERTITI: FAQItem[] = [
   {
     question: "Ce este Nefertiti Lift?",
     answer:
-      "Nefertiti Lift este o tehnică de injectare a toxinei botulinice de-a lungul mandibulei și gâtului (mușchiul platysma) care redefinește conturul jawline-ului și ridică ușor pielea gâtului, fără chirurgie. Efectul durează 3-6 luni.",
+      "Nefertiti Lift constă în injecții cu toxină botulinică de-a lungul mandibulei și gâtului (mușchiul platysma), care redefinesc conturul jawline-ului și ridică ușor pielea gâtului, fără chirurgie. Efectul durează 3-6 luni.",
   },
   {
     question: "Cât costă Nefertiti Lift la Juvena Timișoara?",
@@ -692,7 +692,7 @@ export const FAQ_FACE_SLIMMING: FAQItem[] = [
   {
     question: "Cât costă Face Slimming la Juvena Timișoara?",
     answer:
-      "Face Slimming (injectare maseter bilateral) costă 1.200 RON la Juvena Timișoara. Tratamentul include bruxismul. Consultația este inclusă în tarif.",
+      "Injecțiile Face Slimming (maseter bilateral) costă 1.200 RON la Juvena Timișoara. Tratamentul include bruxismul. Consultația este inclusă în tarif.",
   },
 ];
 

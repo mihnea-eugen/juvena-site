@@ -68,7 +68,7 @@ export default function ToxinaBotulinicaPage() {
       schema={{
         name: "Tratament cu Toxină Botulinică Timișoara",
         description:
-          "Injectare toxină botulinică pentru riduri, babybotox, face slimming, Nefertiti lift și hiperhidroză la Juvena Timișoara.",
+          "Injecții toxină botulinică pentru riduri, babybotox, face slimming, Nefertiti lift și hiperhidroză la Juvena Timișoara.",
         url: `${BASE}/dermatologie-estetica/toxina-botulinica/`,
         price: "600",
         bodyLocation: "față, gât",

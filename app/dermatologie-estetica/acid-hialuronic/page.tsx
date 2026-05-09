@@ -66,7 +66,7 @@ export default function AcidHialuronicPage() {
       schema={{
         name: "Tratament cu Acid Hialuronic Timișoara",
         description:
-          "Injectare acid hialuronic pentru augmentare, conturare și corecție facială la Juvena Timișoara. Buze, pomeți, cearcăne, mandibulă.",
+          "Injecții acid hialuronic pentru augmentare, conturare și corecție facială la Juvena Timișoara. Buze, pomeți, cearcăne, mandibulă.",
         url: `${BASE}/dermatologie-estetica/acid-hialuronic/`,
         price: "800",
         bodyLocation: "față",
