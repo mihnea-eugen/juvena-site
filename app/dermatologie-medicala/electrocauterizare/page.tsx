@@ -5,7 +5,7 @@ import { FAQ_ELECTROCAUTERIZARE } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Electrocauterizare Timișoara – Xantelasme & Papiloame | Juvena",
   description: "Îndepărtarea xantelasmelor, papiloamelor și altor leziuni cutanate benigne prin electrocauterizare la clinica Juvena din Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-medicala/electrocauterizare/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-medicala/electrocauterizare/" },
 };
 
 export default function Page() {

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Dermatologie Estetică Timișoara – Acid Hialuronic & Botox | Juvena",
   description:
     "Tratamente injectabile premium în Timișoara: acid hialuronic, toxină botulinică, biostimulatori de colagen, lipoliză, skinbooster și PRP. Medici specializați.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/" },
 };
 
 const category = CATEGORIES.find((c) => c.slug === "dermatologie-estetica")!;

@@ -18,7 +18,7 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://juvena-timisoara.ro"),
+  metadataBase: new URL("https://juvena.ro"),
   title: {
     default: "Juvena Timișoara – Clinică Dermatologie Estetică & Medicală",
     template: "%s | Juvena Timișoara",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ro_RO",
-    url: "https://juvena-timisoara.ro",
+    url: "https://juvena.ro",
     siteName: "Juvena Timișoara",
     title: "Juvena Timișoara – Clinică Dermatologie Estetică & Medicală",
     description:
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: {
-    canonical: "https://juvena-timisoara.ro",
+    canonical: "https://juvena.ro",
   },
 };
 

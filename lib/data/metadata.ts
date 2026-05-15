@@ -5,7 +5,7 @@ export type PageMeta = {
   canonical: string;
 };
 
-const BASE_URL = "https://juvena-timisoara.ro";
+const BASE_URL = "https://juvena.ro";
 
 export const META: Record<string, PageMeta> = {
   home: {

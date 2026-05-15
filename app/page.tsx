@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Juvena Timișoara – Clinică Dermatologie Estetică & Medicală",
   description:
     "Clinică de dermatologie estetică și medicală în Timișoara. Acid hialuronic, toxină botulinică, skinbooster, dermatoscopie digitală. Programări online.",
-  alternates: { canonical: "https://juvena-timisoara.ro/" },
+  alternates: { canonical: "https://juvena.ro/" },
 };
 
 const STATS = [

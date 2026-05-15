@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Prețuri Tratamente Estetice Timișoara 2026 | Juvena",
   description:
     "Lista completă de prețuri pentru acid hialuronic, toxină botulinică, skinbooster, peeling chimic și dermatologie medicală la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/preturi/" },
+  alternates: { canonical: "https://juvena.ro/preturi/" },
 };
 
 export default function PreturiPage() {

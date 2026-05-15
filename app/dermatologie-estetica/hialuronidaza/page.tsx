@@ -5,7 +5,7 @@ import { FAQ_HIALURONIDAZA } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Injecții Hialuronidază Timișoara – Dizolvare Acid Hialuronic | Juvena",
   description: "Corecția rezultatelor nesatisfăcătoare prin dizolvarea acidului hialuronic cu hialuronidază la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/hialuronidaza/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/hialuronidaza/" },
 };
 
 export default function Page() {

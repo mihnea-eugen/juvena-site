@@ -6,7 +6,7 @@ import CtaSection from "@/components/CtaSection";
 import type { FAQItem } from "@/lib/data/schema";
 import { schemaFAQ, schemaMedicalProcedure, schemaBreadcrumb, schemaMedicalWebPage, schemaHowTo } from "@/lib/data/schema";
 
-const BASE_URL = "https://juvena-timisoara.ro";
+const BASE_URL = "https://juvena.ro";
 
 export type BreadcrumbItem = { name: string; href: string };
 

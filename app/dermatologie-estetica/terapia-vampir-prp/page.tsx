@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Terapia Vampir PRP Timișoara – Facial, Scalp, Corp | Juvena",
   description:
     "Rejuvenare cu plasma bogată în trombocite (PRP) pentru față, gât, decolteu și scalp la Juvena Timișoara. Stimulează regenerarea naturală a pielii.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/terapia-vampir-prp/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/terapia-vampir-prp/" },
 };
 
 export default function TerapiaVampirPage() {
@@ -54,7 +54,7 @@ export default function TerapiaVampirPage() {
       schema={{
         name: "Terapia Vampir PRP Timișoara",
         description: "Rejuvenare cu plasmă bogată în trombocite (PRP) la Juvena Timișoara.",
-        url: "https://juvena-timisoara.ro/dermatologie-estetica/terapia-vampir-prp/",
+        url: "https://juvena.ro/dermatologie-estetica/terapia-vampir-prp/",
         price: "750",
         bodyLocation: "față, scalp, corp",
       }}

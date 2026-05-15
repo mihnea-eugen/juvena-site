@@ -5,7 +5,7 @@ import { FAQ_DERMAPEN } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Dermapen Timișoara – Microneedling PRP Facial | Juvena",
   description: "Microneedling combinat cu PRP pentru față, gât, decolteu și tratamentul vergeturilor și cicatricilor la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/tratamente-faciale/dermapen/" },
+  alternates: { canonical: "https://juvena.ro/tratamente-faciale/dermapen/" },
 };
 
 export default function Page() {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Injecții Skinbooster Timișoara – Profhilo, Restylane, Redensity | Juvena",
   description:
     "Hidratare profundă și revitalizare cutanată cu skinbooster Profhilo, Restylane, Redensity 1 și Mesoheal la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/skinbooster/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/skinbooster/" },
 };
 
 export default function SkinboosterPage() {
@@ -57,7 +57,7 @@ export default function SkinboosterPage() {
       schema={{
         name: "Skinbooster Timișoara – Profhilo, Restylane, Redensity",
         description: "Hidratare profundă a pielii cu skinbooster la Juvena Timișoara.",
-        url: "https://juvena-timisoara.ro/dermatologie-estetica/skinbooster/",
+        url: "https://juvena.ro/dermatologie-estetica/skinbooster/",
         price: "1.400",
         bodyLocation: "față, gât, decolteu",
       }}

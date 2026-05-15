@@ -5,7 +5,7 @@ import { FAQ_FACE_SLIMMING } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Face Slimming Timișoara – Bruxism & Maseter | Juvena",
   description: "Subțierea feței prin relaxarea mușchiului maseter cu toxină botulinică. Tratament pentru bruxism și remodelare facială la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/face-slimming/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/face-slimming/" },
 };
 
 export default function Page() {

@@ -5,7 +5,7 @@ import { FAQ_DERMATOSCOPIE } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Dermatoscopie Digitală Timișoara – Analiză Alunițe | Juvena",
   description: "Analiză digitală a alunițelor și leziunilor cutanate prin dermatoscopie la Juvena Timișoara. Depistarea precoce a leziunilor suspecte.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-medicala/dermatoscopie/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-medicala/dermatoscopie/" },
 };
 
 export default function Page() {

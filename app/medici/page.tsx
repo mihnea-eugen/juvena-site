@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Medicii Noștri – Dermatologi & Esteticieni Timișoara | Juvena",
   description:
     "Cunoaște echipa Juvena Timișoara: medici dermatologi și esteticieni cu experiență în tratamente injectabile, dermatoscopie și îngrijire avansată a pielii.",
-  alternates: { canonical: "https://juvena-timisoara.ro/medici/" },
+  alternates: { canonical: "https://juvena.ro/medici/" },
 };
 
 // Placeholder — se completează cu date reale după aprobare

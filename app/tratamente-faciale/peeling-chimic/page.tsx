@@ -5,7 +5,7 @@ import { FAQ_PEELING } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Peeling Chimic Timișoara – Glow Peel & Magic Peel | Juvena",
   description: "Peeling chimic pentru luminozitate, anti-aging și reducerea petelor pigmentare. Glow Peel și Magic Peel disponibile la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/tratamente-faciale/peeling-chimic/" },
+  alternates: { canonical: "https://juvena.ro/tratamente-faciale/peeling-chimic/" },
 };
 
 export default function Page() {

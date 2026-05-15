@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Injecții Acid Hialuronic Timișoara – Buze, Pomeți, Cearcăne | Juvena",
   description:
     "Injecții acid hialuronic la Juvena Timișoara: augmentare buze, volumizare pomeți, corecție cearcăne și riduri. Medic specialist, rezultate naturale.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/acid-hialuronic/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/acid-hialuronic/" },
 };
 
-const BASE = "https://juvena-timisoara.ro";
+const BASE = "https://juvena.ro";
 
 export default function AcidHialuronicPage() {
   return (

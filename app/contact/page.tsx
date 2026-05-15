@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Contact & Programări Juvena Timișoara",
   description:
     "Programează-te la Juvena Timișoara. Adresă, telefon, email și formular de contact. Consultații dermatologice și estetice disponibile.",
-  alternates: { canonical: "https://juvena-timisoara.ro/contact/" },
+  alternates: { canonical: "https://juvena.ro/contact/" },
 };
 
 const HOURS = [

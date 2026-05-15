@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Injecții Toxină Botulinică Timișoara – Riduri & Botox | Juvena",
   description:
     "Injecții toxină botulinică la Juvena Timișoara: riduri frunte, glabelă, periocular. Babybotox, face slimming, Nefertiti lift. Medic specialist dermatolog.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/toxina-botulinica/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/toxina-botulinica/" },
 };
 
-const BASE = "https://juvena-timisoara.ro";
+const BASE = "https://juvena.ro";
 
 export default function ToxinaBotulinicaPage() {
   return (

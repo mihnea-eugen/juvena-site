@@ -5,7 +5,7 @@ import { FAQ_CONSULT } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Consult Dermatologic Timișoara – Programare Rapidă | Juvena",
   description: "Consultație dermatologică completă la Juvena Timișoara. Diagnostic precis, plan de tratament și recomandări personalizate.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-medicala/consult-dermatologic/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-medicala/consult-dermatologic/" },
 };
 
 export default function Page() {

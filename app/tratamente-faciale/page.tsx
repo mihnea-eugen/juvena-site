@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Tratamente Faciale Timișoara – Peeling & Curățare | Juvena",
   description:
     "Curățare dermatologică profesională, peeling chimic, terapia Vampir cu Dermapen și Winther Glow la clinica Juvena din Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/tratamente-faciale/" },
+  alternates: { canonical: "https://juvena.ro/tratamente-faciale/" },
 };
 
 const category = CATEGORIES.find((c) => c.slug === "tratamente-faciale")!;

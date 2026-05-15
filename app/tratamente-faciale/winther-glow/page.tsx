@@ -5,7 +5,7 @@ import { FAQ_WINTHER_GLOW } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Winther Glow Timișoara – Tratament Hidratare Intensiv | Juvena",
   description: "Tratament intensiv de hidratare și revigorare a pielii pentru sezonul rece. Winther Glow disponibil la clinica Juvena din Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/tratamente-faciale/winther-glow/" },
+  alternates: { canonical: "https://juvena.ro/tratamente-faciale/winther-glow/" },
 };
 
 export default function Page() {

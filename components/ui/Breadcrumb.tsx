@@ -11,7 +11,7 @@ interface BreadcrumbProps {
   light?: boolean;
 }
 
-const BASE_URL = "https://juvena-timisoara.ro";
+const BASE_URL = "https://juvena.ro";
 
 export default function Breadcrumb({ items, light = false }: BreadcrumbProps) {
   const schema = schemaBreadcrumb(

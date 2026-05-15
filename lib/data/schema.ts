@@ -17,7 +17,7 @@
  *  - FAQ directe cu prețuri/durate/locație pentru citabilitate AI
  */
 
-const BASE_URL = "https://juvena-timisoara.ro";
+const BASE_URL = "https://juvena.ro";
 const ORG_NAME = "Juvena – Clinică Dermatologie Estetică & Medicală Timișoara";
 const DATE_PUBLISHED = "2024-06-01";
 const DATE_MODIFIED = "2026-05-01";

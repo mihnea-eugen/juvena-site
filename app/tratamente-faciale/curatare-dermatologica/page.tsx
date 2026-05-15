@@ -5,7 +5,7 @@ import { FAQ_CURATARE } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Curățare Dermatologică Profesională Timișoara | Juvena",
   description: "Curățare facială profundă realizată de medic dermatolog la Juvena Timișoara. Tratament pentru ten mixt, gras, cu imperfecțiuni.",
-  alternates: { canonical: "https://juvena-timisoara.ro/tratamente-faciale/curatare-dermatologica/" },
+  alternates: { canonical: "https://juvena.ro/tratamente-faciale/curatare-dermatologica/" },
 };
 
 export default function Page() {

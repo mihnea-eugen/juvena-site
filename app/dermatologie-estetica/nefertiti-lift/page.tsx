@@ -5,7 +5,7 @@ import { FAQ_NEFERTITI } from "@/lib/data/schema";
 export const metadata: Metadata = {
   title: "Nefertiti Lift Timișoara – Lifting Gât Fără Bisturiu | Juvena",
   description: "Redefinirea conturului gâtului și mandibulei cu toxină botulinică prin tehnica Nefertiti lift la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/nefertiti-lift/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/nefertiti-lift/" },
 };
 
 export default function Page() {

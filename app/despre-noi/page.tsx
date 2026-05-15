@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Despre Juvena – Clinică Estetică Timișoara",
   description:
     "Povestea clinicii Juvena din Timișoara. Echipă de medici specializați în dermatologie estetică și medicală, aparatură modernă, rezultate naturale.",
-  alternates: { canonical: "https://juvena-timisoara.ro/despre-noi/" },
+  alternates: { canonical: "https://juvena.ro/despre-noi/" },
 };
 
 const VALUES = [

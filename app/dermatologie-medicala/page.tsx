@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Dermatologie Medicală Timișoara – Consult & Dermatoscopie | Juvena",
   description:
     "Consultații dermatologice, dermatoscopie digitală pentru analiza alunițelor, mici intervenții și electrocauterizare la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-medicala/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-medicala/" },
 };
 
 const category = CATEGORIES.find((c) => c.slug === "dermatologie-medicala")!;

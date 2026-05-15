@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Lipoliză Injectabilă Timișoara – Lemon Bottle & Aqualix | Juvena",
   description:
     "Reducerea depozitelor de grăsime localizată cu Lemon Bottle și Aqualix. Tratament non-chirurgical disponibil la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena-timisoara.ro/dermatologie-estetica/lipoliza-injectabila/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/lipoliza-injectabila/" },
 };
 
 export default function LipolizaPage() {
@@ -54,7 +54,7 @@ export default function LipolizaPage() {
       schema={{
         name: "Lipoliză Injectabilă Timișoara – Lemon Bottle & Aqualix",
         description: "Reducerea grăsimii localizate cu Lemon Bottle și Aqualix la Juvena Timișoara.",
-        url: "https://juvena-timisoara.ro/dermatologie-estetica/lipoliza-injectabila/",
+        url: "https://juvena.ro/dermatologie-estetica/lipoliza-injectabila/",
         price: "600",
         bodyLocation: "față, corp",
       }}

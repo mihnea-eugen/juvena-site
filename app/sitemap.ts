@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
-const BASE = "https://juvena-timisoara.ro";
+const BASE = "https://juvena.ro";
 
 const urls: MetadataRoute.Sitemap = [
   // Pagini principale
