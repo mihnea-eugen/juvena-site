@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/ui/Breadcrumb";
@@ -9,6 +10,12 @@ import { schemaFAQ, schemaMedicalProcedure, schemaBreadcrumb, schemaMedicalWebPa
 const BASE_URL = "https://juvena.ro";
 
 export type BreadcrumbItem = { name: string; href: string };
+
+export type GalleryPreviewItem = {
+  file: string;
+  alt: string;
+  title: string;
+};
 
 export type TreatmentPageProps = {
   breadcrumbs: BreadcrumbItem[];
@@ -29,6 +36,7 @@ export type TreatmentPageProps = {
     bodyLocation?: string;
   };
   relatedLinks?: { label: string; href: string }[];
+  galleryPreview?: GalleryPreviewItem[];
 };
 
 export default function TreatmentPage({
@@ -44,6 +52,7 @@ export default function TreatmentPage({
   faq,
   schema,
   relatedLinks,
+  galleryPreview,
 }: TreatmentPageProps) {
   const faqSchema = faq ? schemaFAQ(faq) : null;
   const procedureSchema = schema ? schemaMedicalProcedure(schema) : null;
@@ -191,6 +200,46 @@ export default function TreatmentPage({
                   </ul>
                   <p className="text-xs text-[var(--muted)] mt-4 italic">
                     Lista nu este exhaustivă. Medicul va evalua eligibilitatea la consultație.
+                  </p>
+                </div>
+              )}
+
+              {/* Galerie preview */}
+              {galleryPreview && galleryPreview.length > 0 && (
+                <div className="mb-12">
+                  <div className="flex items-center justify-between mb-5">
+                    <h2
+                      className="text-[var(--dark)] text-xl"
+                      style={{ fontFamily: "var(--font-serif)" }}
+                    >
+                      Rezultate
+                    </h2>
+                    <Link
+                      href="/galerie/"
+                      className="text-xs text-[var(--gold)] hover:opacity-80 transition-opacity tracking-widest uppercase"
+                    >
+                      Vezi galeria completă →
+                    </Link>
+                  </div>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    {galleryPreview.slice(0, 6).map((img, i) => (
+                      <Link key={i} href="/galerie/" className="group relative aspect-square overflow-hidden block">
+                        <Image
+                          src={img.file}
+                          alt={img.alt}
+                          fill
+                          sizes="(max-width: 768px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-[var(--dark)]/0 group-hover:bg-[var(--dark)]/30 transition-colors duration-300" />
+                        <span className="absolute top-2 left-2 bg-[var(--gold)]/90 text-white text-[9px] tracking-widest uppercase px-1.5 py-0.5">
+                          Înainte / după
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                  <p className="text-xs text-[var(--muted)] mt-3 italic">
+                    Fotografii realizate la Juvena, publicate cu acordul pacienților.
                   </p>
                 </div>
               )}

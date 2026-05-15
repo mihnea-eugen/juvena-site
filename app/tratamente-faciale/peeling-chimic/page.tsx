@@ -47,6 +47,11 @@ export default function Page() {
         { label: "Dermapen PRP", href: "/tratamente-faciale/dermapen/" },
         { label: "Winther Glow", href: "/tratamente-faciale/winther-glow/" }
       ]}
+      galleryPreview={[
+        { file: "/images/galerie/pori-nas-1.jpg", alt: "Pori dilatați înainte după peeling chimic – Juvena", title: "Pori dilatați nas" },
+        { file: "/images/galerie/pori-nas-2.jpg", alt: "Pori sebacei înainte după – Juvena", title: "Textură piele" },
+        { file: "/images/galerie/peeling-procedura.jpg", alt: "Procedură peeling chimic – Juvena", title: "Procedură peeling" },
+      ]}
     />
   );
 }

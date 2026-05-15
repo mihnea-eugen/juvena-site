@@ -79,6 +79,14 @@ export default function ToxinaBotulinicaPage() {
         { label: "Nefertiti Lift", href: "/dermatologie-estetica/nefertiti-lift/" },
         { label: "Face Slimming", href: "/dermatologie-estetica/face-slimming/" },
       ]}
+      galleryPreview={[
+        { file: "/images/galerie/gummy-smile-1.jpg", alt: "Gummy smile înainte după – toxină botulinică Juvena", title: "Gummy smile" },
+        { file: "/images/galerie/gummy-smile-2.jpg", alt: "Gummy smile rezultat toxină botulinică – Juvena", title: "Gummy smile" },
+        { file: "/images/galerie/riduri-frunte-1.jpg", alt: "Riduri frunte înainte după – toxină botulinică Juvena", title: "Riduri frunte" },
+        { file: "/images/galerie/riduri-frunte-2.jpg", alt: "Riduri frunte bărbat înainte după – toxină botulinică Juvena", title: "Riduri frunte bărbat" },
+        { file: "/images/galerie/gummy-smile-3.jpg", alt: "Gummy smile corectat toxină botulinică – Juvena", title: "Gummy smile" },
+        { file: "/images/galerie/maseter-procedura.jpg", alt: "Procedură maseter face slimming – Juvena", title: "Face slimming" },
+      ]}
     />
   );
 }

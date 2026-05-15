@@ -77,6 +77,13 @@ export default function AcidHialuronicPage() {
         { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },
         { label: "Hialuronidază", href: "/dermatologie-estetica/hialuronidaza/" },
       ]}
+      galleryPreview={[
+        { file: "/images/galerie/buze-1.jpg", alt: "Augmentare buze acid hialuronic înainte după – Juvena", title: "Augmentare buze" },
+        { file: "/images/galerie/buze-2.jpg", alt: "Mărire buze acid hialuronic rezultat – Juvena", title: "Augmentare buze" },
+        { file: "/images/galerie/sant-nazolabial.jpg", alt: "Șanț nazo-labial corectat acid hialuronic – Juvena", title: "Șanț nazo-labial" },
+        { file: "/images/galerie/contur-facial.jpg", alt: "Remodelare contur facial acid hialuronic – Juvena", title: "Contur facial" },
+        { file: "/images/galerie/cearcane.jpg", alt: "Tratament cearcăne acid hialuronic – Juvena", title: "Cearcăne" },
+      ]}
     />
   );
 }

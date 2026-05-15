@@ -49,6 +49,9 @@ export default function Page() {
         { label: "Peeling Chimic", href: "/tratamente-faciale/peeling-chimic/" },
         { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" }
       ]}
+      galleryPreview={[
+        { file: "/images/galerie/dermapen-procedura.jpg", alt: "Procedură dermapen microneedling – Juvena", title: "Dermapen în procedură" },
+      ]}
     />
   );
 }

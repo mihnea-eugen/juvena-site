@@ -39,6 +39,11 @@ export default function Page() {
         { label: "Peeling Chimic", href: "/tratamente-faciale/peeling-chimic/" },
         { label: "Dermapen PRP", href: "/tratamente-faciale/dermapen/" }
       ]}
+      galleryPreview={[
+        { file: "/images/galerie/curatare-procedura.jpg", alt: "Procedură curățare dermatologică – Juvena", title: "Curățare dermatologică" },
+        { file: "/images/galerie/pori-nas-1.jpg", alt: "Pori dilatați înainte după curățare – Juvena", title: "Pori dilatați" },
+        { file: "/images/galerie/pori-nas-2.jpg", alt: "Textură piele înainte după tratament – Juvena", title: "Textură piele" },
+      ]}
     />
   );
 }

@@ -55,6 +55,7 @@ const NAV_ITEMS: NavItem[] = [
       },
     ],
   },
+  { label: "Galerie", href: "/galerie/" },
   { label: "Prețuri", href: "/preturi/" },
   { label: "Contact", href: "/contact/" },
 ];

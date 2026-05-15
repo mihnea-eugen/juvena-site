@@ -44,6 +44,9 @@ export default function Page() {
         { label: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
         { label: "Face Slimming", href: "/dermatologie-estetica/face-slimming/" }
       ]}
+      galleryPreview={[
+        { file: "/images/galerie/hiperhidroza-axilara.jpg", alt: "Procedură tratament hiperhidroză axilară – Juvena", title: "Hiperhidroză axilară" },
+      ]}
     />
   );
 }
