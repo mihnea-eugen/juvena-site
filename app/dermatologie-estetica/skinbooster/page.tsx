@@ -3,7 +3,7 @@ import TreatmentPage from "@/components/TreatmentPage";
 import { FAQ_SKINBOOSTER } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
-  title: "Injecții Skinbooster Timișoara – Profhilo, Restylane, Redensity | Juvena",
+  title: "Injectări Skinbooster Timișoara – Profhilo, Restylane, Redensity | Juvena",
   description:
     "Hidratare profundă și revitalizare cutanată cu skinbooster Profhilo, Restylane, Redensity 1 și Mesoheal la Juvena Timișoara.",
   alternates: { canonical: "https://juvena.ro/dermatologie-estetica/skinbooster/" },
@@ -18,7 +18,7 @@ export default function SkinboosterPage() {
         { name: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" },
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Injecții skinbooster Timișoara"
+      title="Injectări skinbooster Timișoara"
       subtitle="Hidratare profundă și revitalizare cutanată cu acid hialuronic nereticulat de ultimă generație."
       description={[
         "Skinboosterele sunt produse pe bază de acid hialuronic cu densitate redusă, special formulate pentru a hidrata și revitaliza pielea din interior, fără a adăuga volum vizibil. Spre deosebire de fillere, ele îmbunătățesc calitatea texturii pielii, elasticitatea și luminozitatea.",

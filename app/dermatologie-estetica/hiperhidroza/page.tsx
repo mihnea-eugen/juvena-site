@@ -3,7 +3,7 @@ import TreatmentPage from "@/components/TreatmentPage";
 import { FAQ_HIPERHIDROZA } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
-  title: "Tratament Hiperhidroză Timișoara – Injecții Toxină Botulinică | Juvena",
+  title: "Tratament Hiperhidroză Timișoara – Injectări Toxină Botulinică | Juvena",
   description: "Soluție eficientă pentru transpirație excesivă axilară, palmară și plantară cu toxină botulinică la clinica Juvena din Timișoara.",
   alternates: { canonical: "https://juvena.ro/dermatologie-estetica/hiperhidroza/" },
 };

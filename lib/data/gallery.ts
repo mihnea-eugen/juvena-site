@@ -85,11 +85,11 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "maseter-procedura",
     file: "/images/galerie/maseter-procedura.jpg",
-    title: "Injecție maseter / face slimming",
+    title: "Injectare maseter / face slimming",
     category: "Toxină Botulinică",
     categorySlug: "toxina-botulinica",
     type: "procedura",
-    alt: "Procedură injecție maseter face slimming toxină botulinică – Juvena Timișoara",
+    alt: "Procedură injectare maseter face slimming toxină botulinică – Juvena Timișoara",
   },
 
   // — ACID HIALURONIC —

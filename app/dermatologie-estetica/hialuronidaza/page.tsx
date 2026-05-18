@@ -3,7 +3,7 @@ import TreatmentPage from "@/components/TreatmentPage";
 import { FAQ_HIALURONIDAZA } from "@/lib/data/schema";
 
 export const metadata: Metadata = {
-  title: "Injecții Hialuronidază Timișoara – Dizolvare Acid Hialuronic | Juvena",
+  title: "Injectări Hialuronidază Timișoara – Dizolvare Acid Hialuronic | Juvena",
   description: "Corecția rezultatelor nesatisfăcătoare prin dizolvarea acidului hialuronic cu hialuronidază la Juvena Timișoara.",
   alternates: { canonical: "https://juvena.ro/dermatologie-estetica/hialuronidaza/" },
 };
@@ -17,7 +17,7 @@ export default function Page() {
         { name: "Hialuronidază", href: "/dermatologie-estetica/hialuronidaza/" }
       ]}
       eyebrow="Dermatologie Estetică"
-      title="Injecții hialuronidază Timișoara"
+      title="Injectări hialuronidază Timișoara"
       subtitle="Dizolvarea acidului hialuronic – corecție rapidă a rezultatelor nedorite."
       description={[
         "Hialuronidaza este o enzimă care descompune rapid acidul hialuronic injectat. Este utilizată atunci când rezultatul unui tratament cu filler nu corespunde așteptărilor sau în cazul unor complicații (nodul, asimetrie, efect Tyndall).",

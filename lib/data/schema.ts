@@ -485,7 +485,7 @@ export const FAQ_TOXINA_BOTULINICA: FAQItem[] = [
   {
     question: "Există perioadă de recuperare după botox?",
     answer:
-      "Nu există timp de recuperare după injecțiile cu toxină botulinică. Se recomandă evitarea activității fizice intense, a saunei, a masajului facial și a soarelui direct timp de 24 de ore.",
+      "Nu există timp de recuperare după injectările cu toxină botulinică. Se recomandă evitarea activității fizice intense, a saunei, a masajului facial și a soarelui direct timp de 24 de ore.",
   },
   {
     question: "Ce zone pot fi tratate cu toxina botulinică?",
@@ -664,7 +664,7 @@ export const FAQ_NEFERTITI: FAQItem[] = [
   {
     question: "Ce este Nefertiti Lift?",
     answer:
-      "Nefertiti Lift constă în injecții cu toxină botulinică de-a lungul mandibulei și gâtului (mușchiul platysma), care redefinesc conturul jawline-ului și ridică ușor pielea gâtului, fără chirurgie. Efectul durează 3-6 luni.",
+      "Nefertiti Lift constă în injectări cu toxină botulinică de-a lungul mandibulei și gâtului (mușchiul platysma), care redefinesc conturul jawline-ului și ridică ușor pielea gâtului, fără chirurgie. Efectul durează 3-6 luni.",
   },
   {
     question: "Cât costă Nefertiti Lift la Juvena Timișoara?",
@@ -682,7 +682,7 @@ export const FAQ_FACE_SLIMMING: FAQItem[] = [
   {
     question: "Cum funcționează Face Slimming cu toxină botulinică?",
     answer:
-      "Injecțiile de toxină botulinică în mușchiul maseter (mușchiul maxilar) îi reduc volumul în 4-6 săptămâni, subțiind vizual conturul feței. Tratamentul este eficient și pentru bruxism (scrâșnitul dinților) și dureri de cap tensionale.",
+      "Injectările de toxină botulinică în mușchiul maseter (mușchiul maxilar) îi reduc volumul în 4-6 săptămâni, subțiind vizual conturul feței. Tratamentul este eficient și pentru bruxism (scrâșnitul dinților) și dureri de cap tensionale.",
   },
   {
     question: "Cât durează efectul Face Slimming?",
@@ -692,7 +692,7 @@ export const FAQ_FACE_SLIMMING: FAQItem[] = [
   {
     question: "Cât costă Face Slimming la Juvena Timișoara?",
     answer:
-      "Injecțiile Face Slimming (maseter bilateral) costă 1.200 RON la Juvena Timișoara. Tratamentul include bruxismul. Consultația este inclusă în tarif.",
+      "Injectările Face Slimming (maseter bilateral) costă 1.200 RON la Juvena Timișoara. Tratamentul include bruxismul. Consultația este inclusă în tarif.",
   },
 ];
 
@@ -718,7 +718,7 @@ export const FAQ_LIPOLIZA: FAQItem[] = [
   {
     question: "Ce este lipoliza injectabilă?",
     answer:
-      "Lipoliza injectabilă (Aqualyx, Kybella) utilizează substanțe lipofile care distrug celulele adipoase la locul injecției, reducând depozitele localizate de grăsime fără chirurgie. Este eficientă pentru bărbie dublă (grăsimea submentoniană), plici laterale și alte zone cu grăsime localizată.",
+      "Lipoliza injectabilă (Aqualyx, Kybella) utilizează substanțe lipofile care distrug celulele adipoase la locul injectării, reducând depozitele localizate de grăsime fără chirurgie. Este eficientă pentru bărbie dublă (grăsimea submentoniană), plici laterale și alte zone cu grăsime localizată.",
   },
   {
     question: "Câte ședințe de lipoliză sunt necesare?",
