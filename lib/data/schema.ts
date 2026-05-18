@@ -24,7 +24,7 @@ const DATE_MODIFIED = "2026-05-01";
 
 const ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "TBD", // completați după aprobare
+  streetAddress: "Strada Arieș nr 3",
   addressLocality: "Timișoara",
   addressRegion: "Timiș",
   postalCode: "300000",
@@ -132,7 +132,7 @@ export function schemaOrganization() {
     description:
       "Clinică privată de dermatologie estetică și medicală în Timișoara. Acid hialuronic, toxină botulinică, biostimulatori colagen, dermatoscopie digitală.",
     address: ADDRESS,
-    telephone: "TBD",
+    telephone: "+40767203877",
     email: "TBD",
     priceRange: "200 RON – 2.500 RON",
     currenciesAccepted: "RON",
@@ -447,7 +447,7 @@ export const FAQ_ACID_HIALURONIC: FAQItem[] = [
   {
     question: "Cât durează procedura de acid hialuronic?",
     answer:
-      "Injecțiile de acid hialuronic la Juvena Timișoara durează între 15 și 30 de minute. Rezultatele sunt vizibile imediat, cu o îmbunătățire progresivă în primele 2 săptămâni pe măsură ce produsul se integrează în țesuturi.",
+      "Injectările de acid hialuronic la Juvena Timișoara durează între 15 și 30 de minute. Rezultatele sunt vizibile imediat, cu o îmbunătățire progresivă în primele 2 săptămâni pe măsură ce produsul se integrează în țesuturi.",
   },
   {
     question: "Există contraindicații pentru acid hialuronic?",
@@ -465,7 +465,7 @@ export const FAQ_ACID_HIALURONIC: FAQItem[] = [
       "Prețurile pentru acid hialuronic la Juvena Timișoara pornesc de la 800 RON pentru augmentare buze 0,5 ml și 1.200 RON pentru 1 ml buze. Volumizarea pomeților, bărbiei, corecția cearcănelor sau conturarea mandibulei costă 1.400 RON per ml. Consultația medicală este inclusă în tarif.",
   },
   {
-    question: "Există timp de recuperare după injecțiile cu acid hialuronic?",
+    question: "Există timp de recuperare după injectările de acid hialuronic?",
     answer:
       "Nu există timp de recuperare. Pot apărea umflături ușoare sau vânătăi 24-48 ore, care dispar de la sine. Se recomandă evitarea saunei, a activității fizice intense și a expunerii la soare timp de 24 de ore după procedură.",
   },

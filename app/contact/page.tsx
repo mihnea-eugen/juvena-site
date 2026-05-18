@@ -188,7 +188,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="space-y-4">
                   <a
-                    href="tel:TBD"
+                    href="tel:+40767203877"
                     className="flex items-center gap-4 p-4 bg-white border border-[var(--cream-2)] hover:border-[var(--gold)] transition-colors group"
                   >
                     <div className="w-10 h-10 bg-[var(--gold)]/10 flex items-center justify-center group-hover:bg-[var(--gold)] transition-colors">
@@ -198,12 +198,12 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs text-[var(--muted)] tracking-widest uppercase">Telefon</p>
-                      <p className="text-[var(--dark)] text-sm font-medium">De completat</p>
+                      <p className="text-[var(--dark)] text-sm font-medium">0767 203 877</p>
                     </div>
                   </a>
 
                   <a
-                    href="https://wa.me/40TBD"
+                    href="https://wa.me/40767203877"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 bg-white border border-[var(--cream-2)] hover:border-[var(--gold)] transition-colors group"
@@ -230,8 +230,8 @@ export default function ContactPage() {
                   Adresă
                 </h3>
                 <address className="not-italic text-[var(--muted)] text-sm leading-relaxed">
-                  <p>Stradă și număr – de completat</p>
-                  <p>Timișoara, Timiș 300000</p>
+                  <p>Strada Arieș nr 3</p>
+                  <p>Timișoara, Timiș</p>
                   <p>România</p>
                 </address>
                 {/* Google Maps placeholder */}
