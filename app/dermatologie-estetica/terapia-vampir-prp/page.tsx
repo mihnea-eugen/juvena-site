@@ -60,8 +60,8 @@ export default function TerapiaVampirPage() {
       }}
       faq={FAQ_PRP}
       relatedLinks={[
-        { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" },
-        { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },
+        { label: "Skinbooster", href: "/dermatologie-estetica/injectari-skinbooster/" },
+        { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/injectari-biostimulatori-colagen/" },
         { label: "Dermapen PRP", href: "/tratamente-faciale/dermapen/" },
       ]}
     />

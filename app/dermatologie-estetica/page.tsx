@@ -20,13 +20,13 @@ const treatments = flatTreatments(category);
 const PROCEDURE_GROUPS = [
   {
     title: "Acid Hialuronic",
-    href: "/dermatologie-estetica/acid-hialuronic/",
+    href: "/dermatologie-estetica/injectari-acid-hialuronic/",
     desc: "Augmentare buze, volumizare, corecție riduri și conturare facială cu acid hialuronic.",
     treatments: treatments.filter((t) => t.name.toLowerCase().includes("buze") || t.name.toLowerCase().includes("frunte") || t.name.toLowerCase().includes("pomeți") || t.name.toLowerCase().includes("bărbie") || t.name.toLowerCase().includes("mandibulă") || t.name.toLowerCase().includes("cearcăne") || t.name.toLowerCase().includes("nas") || t.name.toLowerCase().includes("nazolabiale") || t.name.toLowerCase().includes("cicatrici") || t.name.toLowerCase().includes("tâmple") || t.name.toLowerCase().includes("mâini")),
   },
   {
     title: "Toxină Botulinică",
-    href: "/dermatologie-estetica/toxina-botulinica/",
+    href: "/dermatologie-estetica/injectari-toxina-botulinica/",
     desc: "Tratament riduri, babybotox, face slimming, Nefertiti lift și hiperhidroză.",
     treatments: treatments.filter((t) =>
       /^\d zonă|^2 zone|^3 zone|^4 zone|babybotox|gummy|nefertiti|hiperhi|face slim/i.test(t.name)
@@ -34,7 +34,7 @@ const PROCEDURE_GROUPS = [
   },
   {
     title: "Biostimulatori & Skinbooster",
-    href: "/dermatologie-estetica/skinbooster/",
+    href: "/dermatologie-estetica/injectari-skinbooster/",
     desc: "Rejuvenare profundă cu HarmoniCa, Sculptra, Profhilo, Restylane și Redensity.",
     treatments: treatments.filter((t) =>
       /harmoni|sculptra|profhilo|redensity|mesoheal|restylane/i.test(t.name)

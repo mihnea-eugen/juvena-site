@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Injectări Biostimulatori Colagen Timișoara – HarmoniCa & Sculptra | Juvena",
   description:
     "Stimulează producția naturală de colagen cu HarmoniCa și Sculptra la Juvena Timișoara. Rejuvenare facială profundă, efecte de lungă durată.",
-  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/biostimulatori-colagen/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/injectari-biostimulatori-colagen/" },
 };
 
 export default function BiostimulatoriPage() {
@@ -15,7 +15,7 @@ export default function BiostimulatoriPage() {
       breadcrumbs={[
         { name: "Acasă", href: "/" },
         { name: "Dermatologie Estetică", href: "/dermatologie-estetica/" },
-        { name: "Biostimulatori Colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },
+        { name: "Biostimulatori Colagen", href: "/dermatologie-estetica/injectari-biostimulatori-colagen/" },
       ]}
       eyebrow="Dermatologie Estetică"
       title="Injectări biostimulatori colagen Timișoara"
@@ -55,14 +55,14 @@ export default function BiostimulatoriPage() {
         name: "Biostimulatori Colagen Timișoara – HarmoniCa & Sculptra",
         description:
           "Stimularea producției de colagen cu HarmoniCa și Sculptra la Juvena Timișoara. Rejuvenare facială profundă.",
-        url: "https://juvena.ro/dermatologie-estetica/biostimulatori-colagen/",
+        url: "https://juvena.ro/dermatologie-estetica/injectari-biostimulatori-colagen/",
         price: "2.000",
         bodyLocation: "față",
       }}
       faq={FAQ_BIOSTIMULATORI}
       relatedLinks={[
-        { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" },
-        { label: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },
+        { label: "Skinbooster", href: "/dermatologie-estetica/injectari-skinbooster/" },
+        { label: "Acid Hialuronic", href: "/dermatologie-estetica/injectari-acid-hialuronic/" },
         { label: "Terapia Vampir PRP", href: "/dermatologie-estetica/terapia-vampir-prp/" },
       ]}
     />

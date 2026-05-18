@@ -41,7 +41,7 @@ export default function Page() {
       ]}
       faq={FAQ_HIPERHIDROZA}
       relatedLinks={[
-        { label: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
+        { label: "Toxină Botulinică", href: "/dermatologie-estetica/injectari-toxina-botulinica/" },
         { label: "Face Slimming", href: "/dermatologie-estetica/face-slimming/" }
       ]}
       galleryPreview={[

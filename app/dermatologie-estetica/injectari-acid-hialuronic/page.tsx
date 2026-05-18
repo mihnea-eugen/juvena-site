@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Injectări Acid Hialuronic Timișoara – Buze, Pomeți, Cearcăne | Juvena",
   description:
     "Injectări acid hialuronic la Juvena Timișoara: augmentare buze, volumizare pomeți, corecție cearcăne și riduri. Medic specialist, rezultate naturale.",
-  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/acid-hialuronic/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/injectari-acid-hialuronic/" },
 };
 
 const BASE = "https://juvena.ro";
@@ -17,7 +17,7 @@ export default function AcidHialuronicPage() {
       breadcrumbs={[
         { name: "Acasă", href: "/" },
         { name: "Dermatologie Estetică", href: "/dermatologie-estetica/" },
-        { name: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },
+        { name: "Acid Hialuronic", href: "/dermatologie-estetica/injectari-acid-hialuronic/" },
       ]}
       eyebrow="Dermatologie Estetică"
       title="Injectări acid hialuronic"
@@ -67,15 +67,15 @@ export default function AcidHialuronicPage() {
         name: "Tratament cu Acid Hialuronic Timișoara",
         description:
           "Injectări acid hialuronic pentru augmentare, conturare și corecție facială la Juvena Timișoara. Buze, pomeți, cearcăne, mandibulă.",
-        url: `${BASE}/dermatologie-estetica/acid-hialuronic/`,
+        url: `${BASE}/dermatologie-estetica/injectari-acid-hialuronic/`,
         price: "800",
         bodyLocation: "față",
       }}
       relatedLinks={[
-        { label: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
-        { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" },
-        { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },
-        { label: "Hialuronidază", href: "/dermatologie-estetica/hialuronidaza/" },
+        { label: "Toxină Botulinică", href: "/dermatologie-estetica/injectari-toxina-botulinica/" },
+        { label: "Skinbooster", href: "/dermatologie-estetica/injectari-skinbooster/" },
+        { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/injectari-biostimulatori-colagen/" },
+        { label: "Hialuronidază", href: "/dermatologie-estetica/injectari-hialuronidaza/" },
       ]}
       galleryPreview={[
         { file: "/images/galerie/buze-1.jpg", alt: "Augmentare buze acid hialuronic înainte după – Juvena", title: "Augmentare buze" },

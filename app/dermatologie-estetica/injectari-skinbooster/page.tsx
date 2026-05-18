@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Injectări Skinbooster Timișoara – Profhilo, Restylane, Redensity | Juvena",
   description:
     "Hidratare profundă și revitalizare cutanată cu skinbooster Profhilo, Restylane, Redensity 1 și Mesoheal la Juvena Timișoara.",
-  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/skinbooster/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/injectari-skinbooster/" },
 };
 
 export default function SkinboosterPage() {
@@ -15,7 +15,7 @@ export default function SkinboosterPage() {
       breadcrumbs={[
         { name: "Acasă", href: "/" },
         { name: "Dermatologie Estetică", href: "/dermatologie-estetica/" },
-        { name: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" },
+        { name: "Skinbooster", href: "/dermatologie-estetica/injectari-skinbooster/" },
       ]}
       eyebrow="Dermatologie Estetică"
       title="Injectări skinbooster Timișoara"
@@ -57,14 +57,14 @@ export default function SkinboosterPage() {
       schema={{
         name: "Skinbooster Timișoara – Profhilo, Restylane, Redensity",
         description: "Hidratare profundă a pielii cu skinbooster la Juvena Timișoara.",
-        url: "https://juvena.ro/dermatologie-estetica/skinbooster/",
+        url: "https://juvena.ro/dermatologie-estetica/injectari-skinbooster/",
         price: "1.400",
         bodyLocation: "față, gât, decolteu",
       }}
       relatedLinks={[
-        { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },
+        { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/injectari-biostimulatori-colagen/" },
         { label: "Terapia Vampir PRP", href: "/dermatologie-estetica/terapia-vampir-prp/" },
-        { label: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },
+        { label: "Acid Hialuronic", href: "/dermatologie-estetica/injectari-acid-hialuronic/" },
       ]}
     />
   );

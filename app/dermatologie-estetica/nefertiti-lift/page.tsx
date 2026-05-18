@@ -39,8 +39,8 @@ export default function Page() {
       ]}
       faq={FAQ_NEFERTITI}
       relatedLinks={[
-        { label: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
-        { label: "Acid Hialuronic – Conturare mandibulă", href: "/dermatologie-estetica/acid-hialuronic/" }
+        { label: "Toxină Botulinică", href: "/dermatologie-estetica/injectari-toxina-botulinica/" },
+        { label: "Acid Hialuronic – Conturare mandibulă", href: "/dermatologie-estetica/injectari-acid-hialuronic/" }
       ]}
     />
   );

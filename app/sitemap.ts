@@ -19,16 +19,16 @@ const urls: MetadataRoute.Sitemap = [
   { url: `${BASE}/tratamente-faciale/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
 
   // Dermatologie estetică — subpagini
-  { url: `${BASE}/dermatologie-estetica/acid-hialuronic/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
-  { url: `${BASE}/dermatologie-estetica/toxina-botulinica/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
-  { url: `${BASE}/dermatologie-estetica/skinbooster/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
-  { url: `${BASE}/dermatologie-estetica/biostimulatori-colagen/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
+  { url: `${BASE}/dermatologie-estetica/injectari-acid-hialuronic/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
+  { url: `${BASE}/dermatologie-estetica/injectari-toxina-botulinica/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
+  { url: `${BASE}/dermatologie-estetica/injectari-skinbooster/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
+  { url: `${BASE}/dermatologie-estetica/injectari-biostimulatori-colagen/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
   { url: `${BASE}/dermatologie-estetica/terapia-vampir-prp/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
   { url: `${BASE}/dermatologie-estetica/lipoliza-injectabila/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
   { url: `${BASE}/dermatologie-estetica/hiperhidroza/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   { url: `${BASE}/dermatologie-estetica/nefertiti-lift/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   { url: `${BASE}/dermatologie-estetica/face-slimming/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-  { url: `${BASE}/dermatologie-estetica/hialuronidaza/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+  { url: `${BASE}/dermatologie-estetica/injectari-hialuronidaza/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
 
   // Dermatologie medicală — subpagini
   { url: `${BASE}/dermatologie-medicala/consult-dermatologic/`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },

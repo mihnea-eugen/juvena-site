@@ -60,7 +60,7 @@ export default function LipolizaPage() {
       }}
       faq={FAQ_LIPOLIZA}
       relatedLinks={[
-        { label: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },
+        { label: "Acid Hialuronic", href: "/dermatologie-estetica/injectari-acid-hialuronic/" },
         { label: "Terapia Vampir PRP", href: "/dermatologie-estetica/terapia-vampir-prp/" },
       ]}
     />

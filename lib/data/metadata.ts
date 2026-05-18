@@ -69,25 +69,25 @@ export const META: Record<string, PageMeta> = {
 
   // Tratamente – Dermatologie Estetică
   "acid-hialuronic": {
-    slug: "/dermatologie-estetica/acid-hialuronic/",
+    slug: "/dermatologie-estetica/injectari-acid-hialuronic/",
     title: "Acid Hialuronic Timișoara – Buze, Pomeți, Cearcăne | Juvena",
     description:
       "Augmentare buze, volumizare frunte, corecție pomeți și cearcăne cu acid hialuronic la Juvena Timișoara. Rezultate naturale, medic specialist.",
-    canonical: `${BASE_URL}/dermatologie-estetica/acid-hialuronic/`,
+    canonical: `${BASE_URL}/dermatologie-estetica/injectari-acid-hialuronic/`,
   },
   "toxina-botulinica": {
-    slug: "/dermatologie-estetica/toxina-botulinica/",
+    slug: "/dermatologie-estetica/injectari-toxina-botulinica/",
     title: "Toxină Botulinică Timișoara – Riduri & Botox | Juvena",
     description:
       "Tratament cu toxină botulinică pentru riduri frunte, glabelă și periocular. Babybotox, face slimming și Nefertiti lift la Juvena Timișoara.",
-    canonical: `${BASE_URL}/dermatologie-estetica/toxina-botulinica/`,
+    canonical: `${BASE_URL}/dermatologie-estetica/injectari-toxina-botulinica/`,
   },
   "biostimulatori-colagen": {
-    slug: "/dermatologie-estetica/biostimulatori-colagen/",
+    slug: "/dermatologie-estetica/injectari-biostimulatori-colagen/",
     title: "Biostimulatori Colagen Timișoara – HarmoniCa & Sculptra | Juvena",
     description:
       "Stimulează producția naturală de colagen cu HarmoniCa și Sculptra la Juvena Timișoara. Rejuvenare facială profundă, efecte de lungă durată.",
-    canonical: `${BASE_URL}/dermatologie-estetica/biostimulatori-colagen/`,
+    canonical: `${BASE_URL}/dermatologie-estetica/injectari-biostimulatori-colagen/`,
   },
   "lipoliza-injectabila": {
     slug: "/dermatologie-estetica/lipoliza-injectabila/",
@@ -104,11 +104,11 @@ export const META: Record<string, PageMeta> = {
     canonical: `${BASE_URL}/dermatologie-estetica/terapia-vampir-prp/`,
   },
   skinbooster: {
-    slug: "/dermatologie-estetica/skinbooster/",
+    slug: "/dermatologie-estetica/injectari-skinbooster/",
     title: "Skinbooster Timișoara – Profhilo, Restylane, Redensity | Juvena",
     description:
       "Hidratare profundă și revitalizare cutanată cu skinbooster Profhilo, Restylane, Redensity 1 și Mesoheal la Juvena Timișoara.",
-    canonical: `${BASE_URL}/dermatologie-estetica/skinbooster/`,
+    canonical: `${BASE_URL}/dermatologie-estetica/injectari-skinbooster/`,
   },
   "hiperhidroza": {
     slug: "/dermatologie-estetica/hiperhidroza/",
@@ -132,11 +132,11 @@ export const META: Record<string, PageMeta> = {
     canonical: `${BASE_URL}/dermatologie-estetica/face-slimming/`,
   },
   hialuronidaza: {
-    slug: "/dermatologie-estetica/hialuronidaza/",
+    slug: "/dermatologie-estetica/injectari-hialuronidaza/",
     title: "Hialuronidază Timișoara – Dizolvare Acid Hialuronic | Juvena",
     description:
       "Corecția rezultatelor nesatisfăcătoare prin dizolvarea acidului hialuronic cu hialuronidază la Juvena Timișoara. Procedură sigură și rapidă.",
-    canonical: `${BASE_URL}/dermatologie-estetica/hialuronidaza/`,
+    canonical: `${BASE_URL}/dermatologie-estetica/injectari-hialuronidaza/`,
   },
 
   // Tratamente – Dermatologie Medicală

@@ -1,0 +1,29 @@
+{
+  "redirects": [
+    {
+      "source": "/dermatologie-estetica/toxina-botulinica/",
+      "destination": "/dermatologie-estetica/injectari-toxina-botulinica/",
+      "permanent": true
+    },
+    {
+      "source": "/dermatologie-estetica/acid-hialuronic/",
+      "destination": "/dermatologie-estetica/injectari-acid-hialuronic/",
+      "permanent": true
+    },
+    {
+      "source": "/dermatologie-estetica/skinbooster/",
+      "destination": "/dermatologie-estetica/injectari-skinbooster/",
+      "permanent": true
+    },
+    {
+      "source": "/dermatologie-estetica/biostimulatori-colagen/",
+      "destination": "/dermatologie-estetica/injectari-biostimulatori-colagen/",
+      "permanent": true
+    },
+    {
+      "source": "/dermatologie-estetica/hialuronidaza/",
+      "destination": "/dermatologie-estetica/injectari-hialuronidaza/",
+      "permanent": true
+    }
+  ]
+}

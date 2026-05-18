@@ -37,7 +37,7 @@ export default function Page() {
       relatedLinks={[
         { label: "Curățare Dermatologică", href: "/tratamente-faciale/curatare-dermatologica/" },
         { label: "Peeling Chimic", href: "/tratamente-faciale/peeling-chimic/" },
-        { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" }
+        { label: "Skinbooster", href: "/dermatologie-estetica/injectari-skinbooster/" }
       ]}
     />
   );

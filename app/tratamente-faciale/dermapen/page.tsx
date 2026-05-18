@@ -47,7 +47,7 @@ export default function Page() {
       relatedLinks={[
         { label: "Terapia Vampir PRP", href: "/dermatologie-estetica/terapia-vampir-prp/" },
         { label: "Peeling Chimic", href: "/tratamente-faciale/peeling-chimic/" },
-        { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" }
+        { label: "Skinbooster", href: "/dermatologie-estetica/injectari-skinbooster/" }
       ]}
       galleryPreview={[
         { file: "/images/galerie/dermapen-procedura.jpg", alt: "Procedură dermapen microneedling – Juvena", title: "Dermapen în procedură" },

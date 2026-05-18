@@ -32,7 +32,7 @@ export const CATEGORIES: Category[] = [
     groups: [
       {
         label: "Acid Hialuronic",
-        slug: "dermatologie-estetica/acid-hialuronic",
+        slug: "dermatologie-estetica/injectari-acid-hialuronic",
         treatments: [
           { name: "Augmentare buze",             detail: "0,5 ml",  price: "800" },
           { name: "Augmentare buze",             detail: "1 ml",    price: "1.200" },
@@ -51,7 +51,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         label: "Toxină Botulinică",
-        slug: "dermatologie-estetica/toxina-botulinica",
+        slug: "dermatologie-estetica/injectari-toxina-botulinica",
         treatments: [
           { name: "1 zonă",      detail: "Glabelă, frunte sau periocular", price: "600" },
           { name: "2 zone",                                                 price: "900" },
@@ -66,7 +66,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         label: "Biostimulatori Colagen",
-        slug: "dermatologie-estetica/biostimulatori-colagen",
+        slug: "dermatologie-estetica/injectari-biostimulatori-colagen",
         treatments: [
           { name: "HarmoniCa", detail: "Biostimulator cu acid hialuronic", price: "2.000" },
           { name: "Sculptra",  detail: "Biostimulator cu acid polilactic",  price: "2.500" },
@@ -74,7 +74,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         label: "Skinbooster",
-        slug: "dermatologie-estetica/skinbooster",
+        slug: "dermatologie-estetica/injectari-skinbooster",
         treatments: [
           { name: "Profhilo",     price: "1.400" },
           { name: "Redensity 1",  price: "1.500" },
@@ -99,7 +99,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         label: "Hialuronidază",
-        slug: "dermatologie-estetica/hialuronidaza",
+        slug: "dermatologie-estetica/injectari-hialuronidaza",
         treatments: [
           { name: "Dizolvare acid hialuronic", price: "600" },
         ],

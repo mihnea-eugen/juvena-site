@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Injectări Toxină Botulinică Timișoara – Riduri & Botox | Juvena",
   description:
     "Injectări toxină botulinică la Juvena Timișoara: riduri frunte, glabelă, periocular. Babybotox, face slimming, Nefertiti lift. Medic specialist dermatolog.",
-  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/toxina-botulinica/" },
+  alternates: { canonical: "https://juvena.ro/dermatologie-estetica/injectari-toxina-botulinica/" },
 };
 
 const BASE = "https://juvena.ro";
@@ -17,7 +17,7 @@ export default function ToxinaBotulinicaPage() {
       breadcrumbs={[
         { name: "Acasă", href: "/" },
         { name: "Dermatologie Estetică", href: "/dermatologie-estetica/" },
-        { name: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
+        { name: "Toxină Botulinică", href: "/dermatologie-estetica/injectari-toxina-botulinica/" },
       ]}
       eyebrow="Dermatologie Estetică"
       title="Injectări toxină botulinică"
@@ -69,13 +69,13 @@ export default function ToxinaBotulinicaPage() {
         name: "Tratament cu Toxină Botulinică Timișoara",
         description:
           "Injectări toxină botulinică pentru riduri, babybotox, face slimming, Nefertiti lift și hiperhidroză la Juvena Timișoara.",
-        url: `${BASE}/dermatologie-estetica/toxina-botulinica/`,
+        url: `${BASE}/dermatologie-estetica/injectari-toxina-botulinica/`,
         price: "600",
         bodyLocation: "față, gât",
       }}
       relatedLinks={[
-        { label: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },
-        { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },
+        { label: "Acid Hialuronic", href: "/dermatologie-estetica/injectari-acid-hialuronic/" },
+        { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/injectari-biostimulatori-colagen/" },
         { label: "Nefertiti Lift", href: "/dermatologie-estetica/nefertiti-lift/" },
         { label: "Face Slimming", href: "/dermatologie-estetica/face-slimming/" },
       ]}

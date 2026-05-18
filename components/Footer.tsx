@@ -2,10 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const LINKS_TRATAMENTE = [
-  { label: "Acid Hialuronic", href: "/dermatologie-estetica/acid-hialuronic/" },
-  { label: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
-  { label: "Skinbooster", href: "/dermatologie-estetica/skinbooster/" },
-  { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/biostimulatori-colagen/" },
+  { label: "Acid Hialuronic", href: "/dermatologie-estetica/injectari-acid-hialuronic/" },
+  { label: "Toxină Botulinică", href: "/dermatologie-estetica/injectari-toxina-botulinica/" },
+  { label: "Skinbooster", href: "/dermatologie-estetica/injectari-skinbooster/" },
+  { label: "Biostimulatori Colagen", href: "/dermatologie-estetica/injectari-biostimulatori-colagen/" },
   { label: "Dermatoscopie", href: "/dermatologie-medicala/dermatoscopie/" },
   { label: "Peeling Chimic", href: "/tratamente-faciale/peeling-chimic/" },
 ];

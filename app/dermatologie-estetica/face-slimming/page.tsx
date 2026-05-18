@@ -39,7 +39,7 @@ export default function Page() {
       ]}
       faq={FAQ_FACE_SLIMMING}
       relatedLinks={[
-        { label: "Toxină Botulinică", href: "/dermatologie-estetica/toxina-botulinica/" },
+        { label: "Toxină Botulinică", href: "/dermatologie-estetica/injectari-toxina-botulinica/" },
         { label: "Nefertiti Lift", href: "/dermatologie-estetica/nefertiti-lift/" }
       ]}
     />
